@@ -1,0 +1,7 @@
+ $('#Vermelho').click(function(){
+    $('p').css("color", "red");
+    $('#mensagem')
+    .text("Cor Alterad")
+    .delay(3000)
+    .fadeOut('fast');
+});

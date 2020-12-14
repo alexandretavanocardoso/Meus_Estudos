@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Elementos</title>
+    <style>
+        .box {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="addhtml">
+            BOXX
+        </div>
+    </div>
+
+    <ul class="cars_list">
+        <li>TIM</li>
+        <li>Oi</li>
+        <li>Claro</li>
+    </ul>
+
+    <p></p>
+
+    <p></p>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Retorna um valor
+            // $('form [type=text]').val('Alexandre')
+
+
+            // armazena dados
+            /*$('.cars_list li').click(function() {
+                console.log(`Esse carro é do ano ${$(this).data('ano')}`);
+            });*/
+
+            // Remove apenas dados inseridos pelo Jquery
+            // $('.cars_list li').removeData('ano');
+
+            // Retorna ou altera a largura
+            // $('.box').width(200);
+
+            // Retorna ou Altera a largura, porem conta o padding
+            // $('.box').innerWidth(200);
+
+            // Retorna ou Altera a altura
+            // $('.box').height(100);
+
+            // Retorna ou Altera a altura, porem conta o padding
+            //  $('.box').innerHeight();
+
+            // Retorna a Posição X e Y do elemento
+            // $('.box').offset();
+
+            // Retorna a Posição X e Y do elemento, se basesando no elemento Pai
+            // $('.box').position();
+
+            // Retorna ou define a posição da barra de rolagem de pé
+            // $(document).scrollTop()
+
+            // Retorna ou define a posição da barra de rolagem deitada
+            // $(document).scrollLeft()
+
+            // Adiciona um código ao final de outro
+            // $('.box div').append('<div>Macaco</div>');
+
+            // Adiciona um código html, porem muda a ordem na sintaxe
+            // $('<div>Macaco</div>').appendTo('.box div');
+
+            // Adiciona um código html no começo do elemento
+            // $('.box div').prepend('<div>Macaco</div>');
+
+            // Adiciona um código html, porem muda a ordem na sintaxe
+            // $('<div>Macaco</div>').prependTo('.box div');
+
+            // Adicona um código html Após um elemento
+            // $('.box div').after('<div>Macaco</div>');
+
+            // Adiciona um código html, porem muda a ordem na sintaxe
+            // $('<div>Macaco</div>').insertAfter('.box div');
+
+            // Adicona um código html Antes um elemento
+            // $('.box div').before('<div>Macaco</div>');
+
+            // Adiciona um código html, porem muda a ordem na sintaxe
+            // $('<div>Macaco</div>').insertBefore('.box div');
+
+            // Adicona um elemento em volta do elemento
+            // $('.cars_list li').wrap('<i></i>')
+
+            // Adicona um elemento em volta do conteudo
+            // $('.cars_list li').wrapInner('<i></i>')
+
+            // remove o elemento
+            // $('.cars_list li:eq(1)').remove();
+
+            // Remove o conteudo do elemento    
+            // $('.cars_list li:eq(2)').empty();
+
+            /* Remove o elemento, porem não tira o Evento dele se quiser adicionar o elemento novamente
+            $('.cars_list').click(function() {
+                $(this).text("Voce clicou em mim")
+            })
+
+            let txt = $('.cars_list').detach();
+
+            $('.cars_list').before(txt);
+            */
+
+            // Removendo os elementos em volta
+            // $('.cars_list li:eq(1)').unwrap();
+
+            /* Clona elemento
+            $('.cars_list li').click(function() {
+                $(this).css('outline', 'red')
+            })
+
+            var el = $('.cars_list').clone(true);
+
+            el.appendTo('p');
+            */
+            // Retorna o conteudo html de um elemento ou trocar o conteudo
+            // $('.cars_list li:eq(1)').html()
+
+            // Retorna o texto do elemnto
+            // $('.cars_list li:eq(1)').text()
+
+            // redefini o conteudo do elemento
+            // $('.cars_list li').replaceWith('<h4>MUDEI</h4>')
+
+            // redefini o conteudo do elemento
+            // $('<h4>MUDEI</h4>').replaceAll('.cars_list li')
+        });
+    </script>
+</body>
+
+</html>

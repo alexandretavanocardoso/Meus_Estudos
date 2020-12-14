@@ -1,0 +1,6 @@
+Ir direto para o numero do Dono
+
+https://api.whatsapp.com/send?l=pt_BR&phone=551499773-1577
+
+Ir direto para o numero do Dono com mensagem GRAVADA
+<a href="https://wa.me/5514999074567?text=Bom%20dia%20quero%20fazer%20um%20orçamento.">asasa</a>

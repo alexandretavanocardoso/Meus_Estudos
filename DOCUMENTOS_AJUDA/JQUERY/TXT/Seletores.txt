@@ -1,0 +1,55 @@
+====>>> SELETORES - FILTROS BASICOS
+
+:last - Selecio o ultimo
+:first - Selecio o primeiro 
+:even - Selecio de maneira Alternada - apenas impares
+:odd - Selecio de maneira Alternada - apenas pares
+:eq(0) - Seleciona em posição especifica - Se baseia em um Array
+:gt(1) - Seleciona todos elementos abaixo de um especifico
+:lt(1) - Seleciona todos elementos acima de um especifico
+
+====>>> SELETORES - FILTROS CSS3
+
+:last-child - Seleciona os ultimos elementos
+:first-child - Seleciona os primeiros elementos
+:nth-child(even) - Seleciona de maneira Alternada - apenas pares
+:nth-child(odd) - Seleciona de maneira Alternada - apenas impares
+:nth-child(1) - Seleciona em posição espedifica
+:nth-last-child(2) - Seleciona em posição especifica começando do ultimo elemento
+
+====>>> SELETORES - FILTROS CONTEUDO
+:contains() - Seleciona o elemento pelo conteudo
+:empty - Seleciona os elementos vazios
+:parent - Seleciona os elementos que possue valor
+:has() - Seleciona os elementos que possue dentro outro elemento
+
+====>>> SELETORES - FILTROS VISIBILIDADE
+
+:hidden - Seleciona os elementos invisiveis
+:visible - Seleciona os elementos visiveis
+
+====>>> SELETORES - FILTROS FORMULÁRIO
+
+:button - Selecionando a tag botao e tipos
+:checkbox - Seleciona elementos tipos Checkbox
+:checked - Seleciona o elemento quando for Checado
+:disabled - Seleciona elementos com a propriedade "disabled"
+:focus - Quando clica emcima do elemento
+:submit - Elementos Tipos submit
+
+====>>> SELETORES - CRIANDO FILTROS
+
+-- $.expr[':'].FiltroQueVaiCriar = function(el) {};
+
+$.expr[':'].carsCentury21 = function(el) {
+     return ($(el).data('ano') > 2000);
+}
+
+-- Injetando - createPseudo(function(){})
+-- $.expr[':'].FiltroQueVaiCriar = $.expr.createPseudo(function(var) {});
+
+$.expr[':'].carsBeforeYear = $.expr.createPseudo(function(year) {
+    return function(el)
+        return ($(el).data('ano') < year
+    }
+});

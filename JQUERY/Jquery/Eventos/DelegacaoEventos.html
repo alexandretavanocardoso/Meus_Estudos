@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        .teste {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>Adionar 'P'</button>
+
+    <p>Lorem ipsum dolor <span>MUNDO</span> sit amet consectetur adipisicing elit. Doloremque voluptatibus aperiam tempora, suscipit hic dolor, obcaecati quam quos consequatur deserunt fuga in modi eius quod consequuntur. Hic corporis vel repudiandae.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatibus aperiam tempora, suscipit hic dolor, obcaecati quam quos consequatur deserunt fuga in modi eius quod consequuntur. Hic corporis vel repudiandae.
+    </p>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('body').on('click', 'p', function(e) {
+
+                $(e.delegateTarget).find('p').removeClass('teste')
+
+                $(this).addClass('teste');
+
+            });
+
+            $('button').on('click', function(e) {
+
+                var p = '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatibus aperiam tempora, suscipit hic dolor, obcaecati quam quos consequatur deserunt fuga in modi eius quod consequuntur. Hic corporis vel repudiandae. </p>'
+
+                $('body').append(p);
+
+
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        .teste {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>TESTE</p>
+        <p>TESTE</p>
+        <p>TESTE</p>
+        <p>TESTE</p>
+        <p>TESTE</p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            /*
+            $('div').append('<p> Marque seus favoritos </p>');
+
+            $('p').on('click', function() {
+                if (!$(this).hasClass('teste')) {
+                    $(this).addClass('teste');
+                } else {
+                    $(this).removeClass('teste');
+                }
+            });
+            */
+
+            $('div').append('<p> Marque seus favoritos (Nao pode ser desfeito)</p>');
+
+            $('p').one('click', function() {
+                if (!$(this).hasClass('teste')) {
+                    $(this).addClass('teste');
+                } else {
+                    $(this).removeClass('teste');
+                }
+            })
+
+        });
+    </script>
+</body>
+
+</html>

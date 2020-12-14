@@ -1,0 +1,6 @@
+CONTROL NETCONNECTIONS ou NCPA.CPL: abre as conexões da rede
+FIREWALL.CPL: abre o firewall do Windows
+INETCPL.CPL: abre as propriedades da internet
+IPCONFIG: exibe as configuraçãos dos endereços IP no computador
+NETSETUP.CPL: abre o assistente de configuração de rede (Só no XP)
+WF.MSC: abre as funções avançadas do firewall do Windows (Só no Vista)

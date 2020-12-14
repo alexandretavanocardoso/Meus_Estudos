@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style></style>
+</head>
+
+<body>
+
+    <!-- Teclado -->
+    <p>Lorem ipsum dolor <span>MUNDO</span> sit amet consectetur adipisicing elit. Doloremque voluptatibus aperiam tempora, suscipit hic dolor, obcaecati quam quos consequatur deserunt fuga in modi eius quod consequuntur. Hic corporis vel repudiandae.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatibus aperiam tempora, suscipit hic dolor, obcaecati quam quos consequatur deserunt fuga in modi eius quod consequuntur. Hic corporis vel repudiandae.
+    </p>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('p').click(function(event) {
+
+                // Retorna o tipo do evento    
+                //console.log('Voce ralizou um evento de:', event.type);
+
+                // Retorna a tag clicada com o nome
+                // alert(`Voce clicou em uma tag <${event.target.localName}>`)
+
+                //Retorna
+                // console.log(event.currentTarget);
+
+
+
+            });
+        });
+    </script>
+</body>
+
+</html>

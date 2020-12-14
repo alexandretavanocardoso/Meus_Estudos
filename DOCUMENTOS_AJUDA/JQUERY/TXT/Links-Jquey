@@ -1,0 +1,63 @@
+==> Remove elementos
+https://api.jquery.com/category/manipulation/dom-removal/
+
+==> Clona elementos
+https://api.jquery.com/category/manipulation/copying/
+
+==> Altera elementos
+https://api.jquery.com/category/manipulation/dom-replacement/
+
+==> Filtros css3
+https://api.jquery.com/category/selectors/child-filter-selectors/
+
+==> Filtros
+https://api.jquery.com/category/selectors/basic-filter-selectors/
+
+==> Filtros Formulario
+https://api.jquery.com/category/selectors/form-selectors/
+
+==> Atributos
+https://api.jquery.com/category/selectors/attribute-selectors/
+
+==> Rrmove elementos
+https://api.jquery.com/category/manipulation/dom-removal/
+
+==> Clona elementos
+https://api.jquery.com/category/manipulation/copying/
+
+==> Altera Conteudo
+https://api.jquery.com/category/manipulation/dom-replacement/
+
+==> Evento do Mouse
+https://api.jquery.com/category/events/mouse-events/
+
+==> Evento do Teclado
+https://api.jquery.com/category/events/keyboard-events/
+
+==> Evento do Formulario
+https://api.jquery.com/category/events/form-events/
+
+==> Evento do Browser
+https://api.jquery.com/category/events/browser-events/
+
+==> Metodo on()
+https://learn.jquery.com/events/introduction-to-events/#ways-to-listen-for-events
+
+==> Delegação de eventos
+https://learn.jquery.com/events/introduction-to-events/#event-delegation
+
+==> event.stopPropragation
+https://api.jquery.com/event.stopPropagation/#event-stopPropagation
+
+==> .off()
+https://api.jquery.com/off/
+
+==> .one()
+https://api.jquery.com/one/
+
+==> .trigger()
+https://api.jquery.com/trigger/
+
+==> Animações
+https://www.w3schools.com/jquery/eff_animate.asp
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Filtro</title>
+
+</head>
+
+<body>
+
+
+
+    <div class="cars">
+        <h3>Carros</h3>
+        <ul class="cars_list">
+            <li data-ano="1983">Uno</li>
+            <li data-ano="1984">Palho</li>
+            <li data-ano="2003">Ônix</li>
+            <li data-ano="2013">Fox</li>
+        </ul>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            $.expr[':'].carsCentury21 = function(el) {
+                return ($(el).data('ano') > 2000);
+            };
+
+            $.expr[':'].carsBeforeYear = $.expr.createPseudo(function(year) {
+                return function(el) {
+
+                    return ($(el).data('ano') < year);
+
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

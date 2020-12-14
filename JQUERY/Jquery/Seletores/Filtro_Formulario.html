@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro Formaulario</title>
+
+</head>
+
+<body>
+
+
+    <div id="register">
+
+        <input type="email" disabled/>
+
+        <input type="email" />
+
+        <div class="field">
+            <label>
+                <input type="checkbox" name="logged"/>
+                <span>Manter conectado</span>
+         
+            </label>
+        </div>
+        <p>Escolha o sexo</p>
+        <p>
+            Homem: <input type="radio" value="M" name="sex" />
+            <br /> Mulher: <input type="radio" value="F" name="sex" />
+        </p>
+        <button type="button">Botao</button>
+        <button type="submit">submit</button>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            // Selecionando o botão
+            // $('#register :button').text()
+
+            //Seleciona elementos tipos Checkbox
+            // $('#register :checkbox').trigger('click');
+
+            // Seleciona o elemento quando for Checado
+            /*$('[type=radio]').change(function() {
+                let value = $('input:checked').val();
+                let gender = (value == 'M') ? 'Masculino' : 'Feminino';
+
+                alert(`Voce selecionou o sexo ${gender}`);
+            });
+            */
+
+            // Seleciona elementos com a propriedade "disabled"
+            // $('#register :disabled').val('alexandre@outlook').prop('disabled', false)
+
+            // Quando clica emcima do elemento
+            /*$('input').focus(function() {
+                $('input:focus').val('olá, voce clicou aqui')
+            })
+            */
+
+            // Elementos Tipos submit
+            // $('#register :submit').css('color', 'blue')
+            /*
+            $('#register :submit').click(function() {
+                alert('clicou aqui');
+            });
+            
+            $('#register :submit').click(function(event) {
+                event.preventDefault();
+                console.log('clicou aqui');
+            });
+            */
+        });
+    </script>
+</body>
+
+</html>

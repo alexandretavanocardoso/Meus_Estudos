@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        body {
+            height: 1500px;
+        }
+        
+        .id {
+            color: red;
+        }
+        
+        .idh1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="secao">
+        <p class="">ROLEI</p>
+        <br><br><br><br><br><br>
+        <h1 class="">ROLEI</h1>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll(function() {
+
+                var position = $(window).scrollTop();
+
+                var section = ['p', 'h1']
+
+
+                var index;
+
+                if (position < 50) {
+                    index = 0;
+                } else if (position < 90) {
+                    index = 1;
+                }
+
+                $(section[index]).addClass('id');
+                section.splice(index, 1);
+
+                $(section.join(', ')).removeClass('id');
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>

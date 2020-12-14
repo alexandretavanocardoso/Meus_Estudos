@@ -1,0 +1,70 @@
+ACCESS.CPL: abre as opções de acesso
+APPWIZ.CPL: abre a ferramenta Adicionar/Excluir um programa
+AZMAN.MSC: abre o gerenciador de autorizações (Só no Vista)
+CERTMGR.MSC: abre os certificados para o usuário atual
+CLICONFG: abre a configuração dos clientes SQL
+COLLAB.CPL: abre a vizinhança imediata (Só no Vista)
+COMEXP.MSC ou DCOMCNFG: abre a ferramenta serviços e componentes (Só no Vista)
+COMPMGMT.MSC: abre a ferramenta de gestão do computador
+COMPUTERDEFAULTS: abre a ferramenta dos programas padrão (Só no Vista)
+CONTROL /NAME MICROSOFT.BACKUPANDRESTORECENTER: abre o centro de backup e de restauração (Só no Vista).
+CONTROL ADMINTOOLS: abre as ferramentas de administração
+CONTROL COLOR: abre as configurações de aparência
+CONTROL FOLDERS: abre as opções de pastas
+CONTROL FONTS: abre o gerenciador de caracteres
+CONTROL INTERNATIONAL ou INTL.CPL: abre as opções regionais e linguísticas
+CONTROL KEYBOARD: abre as propriedades do teclado
+CONTROL MOUSE ou MAIN.CPL: abre as propriedades do mouse
+CONTROL PRINTERS: abre as impressoras e os faxes disponíveis
+CONTROL USERPASSWORDS: abre o editor de contas dos usuários
+CONTROL USERPASSWORDS2 ou NETPLWIZ: controla os usuários e seus acessos
+CONTROL: abre o Painel de controle
+CREDWIZ: abre a ferramenta de backup e de restauração de senhas dos usuários (Só no Vista)
+DESK.CPL: abre as configurações de exibição
+DEVMGMT.MSC: abre o gerenciador de periféricos.
+DRWTSN32: abre o Dr. Watson (Só no XP)
+DXDIAG: abre a ferramenta de diagnóstico DirectX
+EVENTVWR ou EVENTVWR.MSC: abre o observador de eventos
+FSMGMT.MSC: abre as pastas compartilhadas
+GPEDIT.MSC: abre o editor de estratégias de grupo (Para as edições profissionais e mais do Windows)
+HDWWIZ.CPL: abre o assistente “adicionar hardware”
+INFOCARDCPL.CPL: abre o assistente “compatibilidade de programas”
+IRPROPS.CPL: abre o gerenciador de infravermelho
+ISCSICPL: abre a ferramenta de configuração do iniciador ISCI Microsoft (Só no Vista)
+JOY.CPL: abre a ferramenta do controlador de jogos
+LPKSETUP: abre o assistente de instalação e desinstalação dos idiomas de exibição (Só no Vista)
+LUSRMGR.MSC: abre o editor dos usuários e grupos locais
+MDSCHED: abre a ferramenta de diagnósticos da memória Windows (Só no Vista)
+MMC: abre um novo console vazio
+MMSYS.CPL: abre as configurações de som
+MOBSYNC: abre o centro de sincronização
+MSCONFIG: abre a ferramenta de configuração do sistema
+NAPCLCFG.MSC: abre a ferramenta de configuração do cliente NAP (Só no Vista)
+NTMSMGR.MSC: abre o gerenciador de suporte de armazenamento removível
+NTMSOPRQ.MSC: abre as solicitações do operador de armazenamento removível
+ODBCAD32: abre o administrador de fonte de dados ODBC
+OPÇÃOALFEATURES: abre a ferramenta Adicionar/Excluír componentes do Windows (Só no Vista)
+PERFMON ou PERFMON.MSC: abre o monitor de confiabilidade e de desempenho Windows.
+POWERCFG.CPL: abre o gerenciador de modos de alimentação (Só no Vista)
+REGEDITou REGEDT32: abre o editor de registro (Só no Vista)
+REKEYWIZ: abre o gerenciador de certificados de criptografia de arquivos (Só no Vista)
+RSOP.MSC: abre o jogo de estratégia resultante
+SECPOL.MSC: abre as configurações de segurança local
+SERVICES.MSC: abre o gerenciador de serviços
+SLUI: abre o assistente de ativação do Windows (Só no Vista)
+SYSDM.CPL: abre as propriedades do sistema
+SYSEDIT: abre o editor de configuração do sistema (Atenção, manipular com cautela)
+SYSKEY: abre o utilitário de proteção do banco de dados das contas Windows (Atenção, manipular com extrema cautela !)
+SYSPREP: abre a pasta com a ferramenta de preparação do sistema (Só no Vista)
+TABLETPC.CPL: abre as configurações para o Tablet pc (Só no Vista)
+TASKSCHD.MSC ou CONTROL SCHEDTASKS: abre o planejador de tarefas (Só no Vista)
+TELEPHON.CPL: abre a ferramenta de conexão telefônica
+TIMEDATE.CPL: abre as configurações da hora e da data
+TPM.MSC: abre a ferramenta de gestão do módulo de plataforma segura no computador local (Só no Vista)
+UTILMAN: abre as opções de ergonomia (Só no Vista)
+VERIFICAR: abre o gerenciador de verificação dos drivers
+WMIMGMT.MSC: abre o “Windows Management Infrastructure”
+WSCUI.CPL: abre o centro de segurança Windows
+WUAUCPL.CPL: abre o serviço de atualização do Windows (Só no XP)
+
+

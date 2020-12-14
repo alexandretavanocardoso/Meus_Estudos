@@ -1,0 +1,6 @@
+CHKDSK: realiza uma análise da partição especificada nas configurações do comando (Para mais informações, digite CHKDSK /? no interpretador de comandos CMD)
+CLEANMGR: abre a ferramenta de limpeza do disco
+DEFRAG: Desfragmenta o disco rígido
+DFRG.MSC: abre a ferramenta de desfragmentação do disco
+DISKMGMT.MSC: abre o gerenciador de discos
+DISKPART: abre a ferramenta de particionamento (manipulação pesada)

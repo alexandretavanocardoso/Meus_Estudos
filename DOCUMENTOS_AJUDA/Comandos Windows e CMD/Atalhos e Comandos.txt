@@ -1,0 +1,27 @@
+%HOMEDRIVE%: abre o explorador na partição onde o sistema operacional está instalado
+%HOMEPATH%: abre a pasta do usuário conectado C:\Documents and settings\[nome do usuário]
+%PROGRAMFILES%: abre a pasta de instalação de outros programas (Program Files)
+%TEMP% ou %TMP%: abre a pasta temporária
+%USERPROFILE%: abre a pasta do perfil do usuário conectado
+%WINDIR% ou %SYSTEMROOT% : abre a pasta de instalação do Windows
+%WINDIR%\system32\rundll32.exe shell32.dll,Control_RunDLL hotplug.dll: exibe a janela “Retirar o dispositivo com segurança”
+AC3FILTER.CPL: abre as propriedades do filtro AC3 (se estiver instalado)
+FIREFOX: executa Mozilla FireFox (se estiver instalado)
+JAVAWS: Visualiza o cache do software JAVA (se estiver instalado)
+LOGOFF: fecha a sessão
+NETPROJ: autoriza ou não a conexão a um projetor de rede (Só no Vista)
+SFC /SCANNOW: varre, imediatamente, todos os arquivos do sistema e localiza os que estão danificados
+SFC/VERIFYONLY: varre apenas os arquivos do sistema
+SFC/SCANFILE=”nome e caminho do arquivo”: varre o arquivo especificado e repara, caso esteja danificado
+SFC/VERIFYFILE=”nome e caminho do arquivo”: varre apenas o arquivo especificado
+SFC/SCANONCE: varre os arquivos do sistema no arranque seguinte
+SFC/REVERT: repõe a configuração inicial (Para mais informações, digite SFC /? no interpretador de comandos
+SHUTDOWN: desliga o Windows
+SHUTDOWN-A: interrompe a desconexão do Windows
+VSP1CLN: remove o cache de instalação do serviço pack 1 do Vista
+
+Driverquery:  O driverquery é uma ferramenta que fornece informações sobre os drivers de hardware instalados em seu computador. Você pode usar o comando driverquery -v ou driverquery -si
+
+Powercfg:  é um comando que lhe ajuda a habilitar recursos e obter várias informações sobre a energia do computador, como habilitar a hibernação e obter informações sobre o consumo de energia do Windows.
+
+Pathping: O “pathping” é uma versão avançada do ping que exibe várias informações sobre a rota dos pacotes e lhe ajuda a descobrir onde está o problema. Como o ping, digite “pathping” + o nome ou o endereço IP do host.

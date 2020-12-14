@@ -1,0 +1,9 @@
+Link para EMAIL
+
+<a href="mailto:someone@microsoft.com?subject=Hello%20again">
+Send Mail </ a>
+</ p>
+
+Link para LIGAR
+
+<a href="tel:1123456789" class="estilo-do-botao">Ligue Agora</a>

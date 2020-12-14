@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.horaEescolha {
+    width: 50px;
+    height: 120px;
+    background-color: #EEE;
+    color: #fff;
+    position: absolute;
+    display: none;
+}

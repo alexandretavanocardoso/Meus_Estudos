@@ -1,0 +1,42 @@
+
+==> CRIANDO PLUGIN
+
+-- $.fn.NomePlugin = function(){};
+
+$.fn.changeText = function() {
+
+    return this.each(function() {
+        $(this).css('font-size', '50px');
+    });
+
+}
+
+==> CHAMANDO NOSSO PLUGIN ACIMA
+
+$('button').on('click', function() {
+    $('h1').changeText().css('color', 'red');
+    $('h2').changeText();
+});
+
+==> EVITANDO CONFLITOS
+
+(function($){
+    // Plugin para ser carregao logo no começo
+})(jQuery);
+
+EX.
+(function($) {
+
+    $.fn.changeText = function() {
+
+        return this.each(function() {
+            $(this).css('font-size', '50px');
+        });
+
+    }
+
+})(jQuery);
+
+
+
+

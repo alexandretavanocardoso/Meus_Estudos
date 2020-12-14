@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <img id="i1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT9v2k6Ntkih_fQk2MGRqyjG2jMpB6InNdJ2g&usqp=CAU"/>
+    <img id="i2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQKJQ-h-U8GnLXu2HQC8e14UG-6sYfBZfkBcg&usqp=CAU"  style="display: none;"/>
+    <img id="i3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTjM9rxgQgrFy545thdTRTgtdJUrb2Ef1zbhQ&usqp=CAU"  style="display: none;"/>
+    <img id="i4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwbYfgOwsC1n2vMV7xBQR0WlE0w2LCyZhNGw&usqp=CAU"  style="display: none;"/>
+
+
+    <br />
+
+    <a href="#" id="l1">1</a>
+    <a href="#" id="l2">2</a>
+    <a href="#" id="l3" >3</a>
+    <a href="#" id="l4">4</a>
+
+    <script>
+        
+        $(function(){
+            $('#l1').click(function() {
+            $('#i1').show();
+            $('#i2').hide();
+            $('#i3').hide();
+            $('#i4').hide();
+           });
+           $('#l2').click(function() {
+            $('#i1').hide();
+            $('#i2').show();
+            $('#i3').hide();
+            $('#i4').hide();
+           });
+           $('#l3').click(function() {
+            $('#i1').hide();
+            $('#i2').hide();
+            $('#i3').show();
+            $('#i4').hide();
+           });
+           $('#l4').click(function() {
+            $('#i1').hide();
+            $('#i2').hide();
+            $('#i3').hide();
+            $('#i4').show();
+           });
+        });
+
+    </script>
+</body>
+</html>

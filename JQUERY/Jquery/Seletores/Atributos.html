@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores com Atributos</title>
+
+</head>
+
+<body>
+
+    <a id="a" href="#" title="Pagina">Links</a>
+    <br />
+    <a id="a" href="instagram.com">Links</a>
+    <br />
+    <a id="a" href="instagram.horse">Links</a>
+    <br />
+    <a id="a" href="facebook.com">Links</a>
+    <br />
+    <a id="a" href="hello.com">Links</a>
+    <br />
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            // Atributos
+
+            // Possui um atributo
+            $('a[href]').text('1 Atributo');
+
+            // Atibuto com Valor
+            $('a[href="facebook.com"]').text('Atributo com informação');
+
+            // Que começam com uma letra especifica
+            $('a[href^="i"]').text('Letra que começa');
+
+            // Que termina com uma letra especifica            
+            $('a[href$="horse"]').text('Letra que termina');
+
+            // Que possuem a expressão informada
+            $('a[href*="hel"]').text('Qualquer lugar');
+
+        });
+    </script>
+</body>
+
+</html>

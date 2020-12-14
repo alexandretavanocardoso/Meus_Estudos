@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        .teste {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <input type="text" />
+
+        <textarea></textarea>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('div').on('change', function() {
+                alert('elemento Mudou, Seu valor é:' + ' ' + $('input').val());
+            });
+
+            $('textarea').on('change', function(event) {
+
+                event.stopPropagation();
+
+                $(this).css('background', 'red');
+            })
+
+        });
+    </script>
+</body>
+
+</html>

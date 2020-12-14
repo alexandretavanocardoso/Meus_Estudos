@@ -1,0 +1,20 @@
+.menu {
+    text-align: center;
+    width: 800px;
+    height: 70px;
+    background-color: #DDD;
+    position: fixed;
+    bottom: 0;
+    /* Estrategia para deixar o elemento fixo no meio*/
+    left: 50%;
+    margin-left: -400px;
+}
+
+.icone {
+    font-size: 50px;
+    padding: 10px;
+    height: 70px;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}

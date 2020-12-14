@@ -1,0 +1,48 @@
+Abbreviation ASP.NET Control
+
+STANDARD CONTROLS
+btn		Button
+cb		CheckBox
+cbl		CheckBoxList
+ddl		DropDownList
+fu		FileUpload
+hdn		HiddenField
+lnk		Hyperlink
+img		Image
+ibtn(btn)	ImageButton
+lbl		Label
+lbtn(btn)	LinkButton
+lb		ListBox
+lit		Literal
+mv		MultiView
+pnl		Panel
+ph		PlaceHolder
+rb		RadioButton
+rbl		RadioButtonList
+tbl		Table
+txt		TextBox
+v		View
+
+DATA CONTROLS
+dtl		DataList
+dp		DataPager
+dtv		DetailsView
+ets		EntityDataSource
+fv		FormView
+gv		GridView
+lds		LinqDataSource
+lv		ListView
+ods		ObjectDataSource
+qe		QueryExtender
+rpt		Repeater
+smd		SiteMapDataSource
+sds		SqlDataSource
+xds		XmlDataSource
+
+VALIDATION CONTROLS
+cpv		CompareValidator
+ctv		CustomValidator
+rv		RangeValidator
+rev		RegularExpressionValidator
+rfv		RequiredFieldValidator
+vs		ValidationSummary

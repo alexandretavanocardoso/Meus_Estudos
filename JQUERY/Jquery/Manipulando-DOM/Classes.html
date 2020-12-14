@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Classes</title>
+    <style>
+        /* Classe Colocada */
+        
+        .stylzed_menu {
+            color: green;
+            text-decoration: underline !important;
+            font-size: 20px;
+        }
+        /* Classe Remove */
+        
+        .remove {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p> <span>AddClass</span></p>
+
+    <h4 class="remove">removeClass</h4>
+
+    <a href="#"> Alternar</a>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            /* Classe Colocada */
+            $('p span').addClass('stylzed_menu');
+
+            /* Classe Removida */
+            $('h4').removeClass('remove');
+
+            /* Alternar a classe*/
+            $('a').click(function(event) {
+                event.preventDefault();
+
+                $(this).hasClass('stylzed_menu');
+            });
+
+            /* Se possur ou nao a classe*/
+            $('a').hasClass('remove');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores com Filtros de conteudo</title>
+
+</head>
+
+<body>
+
+    <div class="cars">
+        <h3>Carros</h3>
+        <ul class="cars_list">
+            <li>Uno</li>
+            <li>Palho</li>
+            <li>Ônix</li>
+            <li>Fox</li>
+            <li>Fiesta</li>
+        </ul>
+    </div>
+
+    <div class="cars">
+        <h3>Carros</h3>
+        <ul class="cars_list">
+            <li>Ferrari <span> - TM</span></li>
+            <li>Palho <span> - VM</span></li>
+            <li>Ônix <span> - GM</span></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            // Filtros conteudo
+
+            // Seleciona o elemento pelo conteudo
+            // $("div h3:contains(Carros)").css('color', 'red');
+
+            // Seleciona os elementos vazios
+            /*$(".cars_list li:empty").text('Vazio').css({
+                'background-color': 'red',
+                'color': 'white'
+            });
+            */
+
+            //  Seleciona os que possue valor
+            // $(".cars_list li:parent").append('<span style="color: green"> - Tem Valor </span>');
+
+            // Seleciona os elementos que possue dentro outro elemento
+            /*$('.cars_list li:has(span)').animate({
+            fontSize: '30px',
+            opacity: 0.7,
+            }, 2000)
+            */
+        });
+    </script>
+</body>
+
+</html>

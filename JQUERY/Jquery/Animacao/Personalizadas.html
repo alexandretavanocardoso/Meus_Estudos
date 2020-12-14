@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Atributos</title>
+    <style></style>
+</head>
+
+<body>
+
+    <div>
+        <img src="../img/logo-hcode.svg" /><br>
+        <button id="button"> Ocultar / Exibir item</button>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div>
+        <p>fadeIn</p>
+        <button id="button1"> Ocultar / Exibir item</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('img').animate({
+                width: '50px'
+            }, 5000);
+
+            $('p').animate({
+                fontSize: "50px"
+            }, 2000)
+
+        });
+    </script>
+</body>
+
+</html>

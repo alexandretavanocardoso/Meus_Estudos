@@ -1,0 +1,77 @@
+
+===> Devemos informar um tempo entre os parentese:
+slow, fast ou numerico
+
+==> ANIMAÇOES BASICAS
+
+.hide() - Esconde elemento
+.show() - Aparece o elemento escondido
+.toggle() - Faz a função do hide e show, (Esconde e aparece o elemento)
+
+==> FADING
+-- Podemos adicionar outra função
+
+EX: .fadeIn('slow', function() {})
+
+.fadeOut() - Esconde o elemento pela opacidade
+.fadeIn() - Mostra o elemento pela opacidade
+.fadeTo('Tempo', 'Numero opacidade 0 até 1') - Tira a opacidade do elemento no tempo colocado
+.fadeToggle() - Faz a função do hide e show, (Esconde e aparece o elemento)
+
+==> SLIDING
+
+.slideUp() - Esconde elemento com efeito de slide
+.slideDown() - Mostra elemento com efeito de slide
+.slideToggle() - Esconde e Mostra elemento com efeito de slide
+
+==> Desabilitando
+
+$.fx.off = true;
+
+-- Se tiver animação para, se nao tiver adiciona
+
+ $.fx.off = !$.fx.off;
+
+==> CRIANDO ANIMAÇÕES 
+
+-- Podemos dar um tempo para animação - .animate({}, 3000)
+-- Podemos fazer um callback (outra função) - .animate({}, 2000, function(){});
+
+.animate({}) - Cria a animação, não aceita cores - camelcase - ex. fontSize: "20px",
+ou maior e igual a o tamanho"+=20px"
+
+
+==> ANIMAÇÕES EM SEQUENCIA
+
+.queue(function() {}) - Fila da animações. demostra a ultima animação da fila
+não executa nada abaixo dele.
+
+.dequeue() - Faz com que a fila continue, sendo assim executa o que esta abaixo
+do .queue(), melhor ser colocado no elemento(this), que estao fazendo a animacao
+
+.clearQueue() - Limpa a fila de animaçoes
+.delay() - Da um tempo de espera entra as animações
+.stop('Se para apenas a primeira animação ou ela por inteira', 'Se para na final da animmaçao ou se para onde ela esta no momentos')
+.stop() - Para animação, true or false
+.finish() - Para a animação a "jogando" no final dela
+
+Ex.
+$('button').on('click', function() {
+
+    .animate({
+        marginLeft: "+=300px"
+    })
+    .delay(2000) 
+    .queue(function() {
+        $('p').text("Concluiu").css('color', 'red');
+        $(this).dequeue();
+    })
+    .clearQueue()
+    .fadeOut(2000);
+
+});
+
+
+
+
+

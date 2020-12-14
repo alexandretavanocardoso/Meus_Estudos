@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        .teste {
+            color: blue;
+        }
+        
+        .teste_ {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>TESTE</p>
+        <p>TESTE</p>
+        <p>TESTE</p>
+        <p>TESTE</p>
+        <p>TESTE</p>
+        <button> Tira evento </button>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('p').on('click.colorBlue', function() {
+                $(this).toggleClass('teste');
+            });
+
+            $('p').on('click', function() {
+                $(this).toggleClass('teste_');
+            });
+
+            $('button').on('click', function() {
+                $('p').off('click.colorBlue');
+            })
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+
+
+====>>>> DOM
+
+.length - Conta a quantidade do elemento
+this - Direciona para o mesmo elemento
+
+==> ESTILIZA
+
+.css() - Deixa montar um css
+.css({}) - Deixa montar um objeto css
+
+==> NAVEGA PELO DOCUMENTO
+
+.find() - melhor ser usado estilo pai e filho
+.prev() - Seleciona o elemento mais proxima que possuir a classe escrita
+
+==> ADICONA TAG NO ELEMENTO
+
+.wrap() - Adiciona tags novas ao conteudo EX.'<i></i>'
+
+==> CLASSES
+
+.AddClass() - Adiciona classe
+.removeClass() - Remove classe
+.toggleClass() - Alterna entre classes
+.hasClass() - Se possue ou não a claase
+
+==> ATRIBUTOS
+
+.attr() - Retorna qual o conteudo dentro do atributo
+.attr('atributo', 'O que vai por no lugar') - Troca o conteudo do atributo
+.removeAttr() - Remove o atributo
+
+==> PROPRIEDADES
+
+.prop('') - Retorna - true ou false
+.prop('', true or false) - Define um propriedade - true ou false
+.removeProp - Remove propriedade (Apenas as que criamos)
+
+==> VALORES ELEMENTOS
+
+.val() - Adiciona ou vizualiza um valor
+.data() - Retorna ou define os dados de um elemento
+.removeData() - Remove apenas dados inseridos pelo Jquery
+
+=> DIMENSAO DO ELEMENTO
+
+.width() - Retorna ou Altera a largura
+.innerWidth() - Retorna ou Altera a largura, porem conta o padding
+.heigh() - Retorna ou Altera a altura
+.innerHeight() - Retorna ou Altera a altura, porem conta o padding
+
+=> POSIÇÃO DO ELEMENTO
+
+.offset() - Retorna a Posição X e Y do elemento, se baseando no Body
+.offset({}) - Altera a posição X ou Y
+.position() - Retorna a Posição X e Y do elemento, se basesando no elemento Pai
+
+==> BARRA DE ROLAGEM
+
+.scrollTop() - Retorna ou define a posição da barra de rolagem de pé, temos que fazer com o dumento EX. $(document).scrollTop()
+.scrollLeft() - Retorna ou define a posição da barra de rolagem deitada, temos que fazer com o dumento EX. $(document).scrollLeft()
+
+==> ADICIONANDO ELEMENTOS HTML
+
+.append() - Adiciona um código html ao final do elemento - $('tags').append('html que vai adicionar');
+.appendTo() - Adiciona um código html, porem muda a ordem na sintaxe - $('html que vai adicionar').appendTo('tags');
+.prepend() - Adiciona um código html no começo do elemento - $('tags').prepend('html que vai adicionar');
+.prependTo() - Adiciona um código html no começo, porem muda a ordem na sintaxe - $('html que vai adicionar').prependTo('tags');
+.after() - Adicona um código html Após um elemento
+.insertAfter() - Adiciona um código html, porem muda a ordem na sintaxe - $('html que vai adicionar').insertAfter('tags');
+.before() - Adicona um código html Antes um elemento
+.insertBefore() - Adiciona um código html, porem muda a ordem na sintaxe - $('html que vai adicionar').insertBefore('tags');
+.wrap() - Adicona um elemento em volta do elemento
+.wrapInner() - Adicona um elemento em volta do conteudo
+
+==> REMOVE ELEMENTOS
+
+.remove() - Remove o elemento inteiro
+.empty() - Remove o conteudo do elemento
+.detach() - Remove o elemento, porem não tira o Evento dele se quiser adicionar o elemento novamente
+.unwrap() - Removendo os elementos em volta
+
+==> CLONA ELEMENTOS
+
+.clone() - Clona o elemento, importante que coloque dentro de uma variavel,
+para clonar o evento do elemento entre o () colocar (true)
+
+==> ALTERA O CONTEUDO DO ELEMENTO
+
+.html() - Retorna o conteudo html de um elemento ou trocar o conteudo
+.text() - Retorna o texto do elemnto ou troca o conteudo
+.replaceWith() - Redefini o conteudo do elemento HTML EX. $('.cars_list li').replaceWith('<h4>MUDEI</h4>')
+.replaceAll() - Redefini o conteudo do elemento HTML EX. $('<h4>MUDEI</h4>').replaceAll('.cars_list li') 
+
+
+

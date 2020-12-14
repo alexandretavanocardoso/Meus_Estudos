@@ -1,0 +1,31 @@
+PLUGINS e FINALIDADES
+
+Elementor - Editar Conteudo Pags.
+
+Essential Addons for Elementor - Editar Conteudo Pags.
+
+HT Mega - Absolute Addons for Elementor Page Builder - Editar Conteudo Pags.
+
+JS Composer - Editar Conteudo Pags.
+
+Check email - Envia e-mail num dominio pago (mais simples).
+
+gmail smtp - (tem q ter um dominio tanto apgo como gratuito) Envio de email Gmail, Google APIs
+
+caldera forms - Criação de Formulários e envio de e-mail.
+
+Contact Form 7 - Criação de Formulários
+
+reset wordpress - Reseta a instalação.
+
+demo import - Importa dados de demosntração dos temas.
+
+Wordfence Security – Firewall & Malware Scan - Proteção
+
+UpdraftPlus WordPress Backup Plugin - Backup do site
+
+Migração All-in-One WP - Exporta ou Importa um projeto
+
+Simple Custom CSS and JS - Adicionar css e js
+
+Simply Static - Pagina estatica

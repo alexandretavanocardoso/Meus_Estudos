@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        .flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: gray;
+            width: 40px;
+        }
+        
+        #vermelho {
+            border-radius: 50%;
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            margin: 10px 0px 10px 0px;
+        }
+        
+        #azul {
+            border-radius: 50%;
+            background-color: blue;
+            width: 20px;
+            height: 20px;
+            margin: 10px 0px 10px 0px;
+        }
+        
+        #rosa {
+            border-radius: 50%;
+            background-color: pink;
+            width: 20px;
+            height: 20px;
+            margin: 10px 0px 10px 0px;
+        }
+        
+        #roxo {
+            border-radius: 50%;
+            background-color: purple;
+            width: 20px;
+            height: 20px;
+            margin: 10px 0px 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <br><br>
+
+    <button id="Exibi"> Esconde / Exibi </button>
+
+    <input type="text" />
+    <button id=cliente> Salvar </button>
+
+
+    <div id="menu" class="flex bolas">
+        <a href="#" id="vermelho"></a>
+        <a href="#" id="azul"></a>
+        <a href="#" id="rosa"></a>
+        <a href="#" id="roxo"></a>
+    </div>
+
+    <div>
+        <h1> Cor 1 </h1>
+        <h1> Cor 2 </h1>
+        <h1> Cor 3 </h1>
+        <h1> Cor 4 </h1>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('#Exibi').on('click', function() {
+                $('#menu').slideToggle(500);
+            });
+
+            $('#vermelho').on('click', function() {
+                $(this).css('border', '2px solid black');
+                $('h1').css('color', 'red');
+                $('#azul').css('border', 'none');
+                $('#rosa').css('border', 'none');
+                $('#roxo').css('border', 'none');
+            });
+
+            $('#azul').on('click', function() {
+                $(this).css('border', '2px solid black');
+                $('h1').css('color', 'blue');
+                $('#vermelho').css('border', 'none');
+                $('#rosa').css('border', 'none');
+                $('#roxo').css('border', 'none');
+            });
+
+            $('#rosa').on('click', function() {
+                $(this).css('border', '2px solid black');
+                $('h1').css('color', 'pink');
+                $('#vermelho').css('border', 'none');
+                $('#azul').css('border', 'none');
+                $('#roxo').css('border', 'none');
+            });
+
+            $('#roxo').on('click', function() {
+                $(this).css('border', '2px solid black');
+                $('h1').css('color', 'purple');
+                $('#vermelho').css('border', 'none');
+                $('#rosa').css('border', 'none');
+                $('#azul').css('border', 'none');
+            });
+
+            $('#cliente').click(function() {
+                alert(`Sucesso! Voce cadastrou um novo cliente: ${$('input').val()}`);
+            })
+
+        });
+    </script>
+</body>
+
+</html>

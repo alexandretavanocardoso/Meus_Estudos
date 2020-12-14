@@ -1,0 +1,10 @@
+
+====>>> IF TERNARIO
+
+ let gender = (value == 'M') ? 'Masculino' : 'Feminino';
+
+
+====>>> Funções
+
+eval() - Pega ums string e transforma em codigo JS
+alert() - Dispara um alerta

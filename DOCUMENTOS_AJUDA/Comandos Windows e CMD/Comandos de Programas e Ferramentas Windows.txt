@@ -1,0 +1,45 @@
+%WINDIR%\SYSTEM32\RESTORE\RSTRUI.EXE: abre a ferramenta de restauração do sistema (Só no XP).
+CALC: abre a calculadora
+CHARMAP: abre a tabela de caracteres
+CLIPBRD: abre a área de transferência (Só no XP, para adicionar no Vista
+CMD: abra o interpretador de comandos (prompt)
+DIALER: abre o numerador telefônico do Windows
+DVDPLAY: abre seu leitor DVD
+EUDCEDIT: abre o editor de caracteres privados
+EXPLORER: abre o Windows Explorer
+FSQUIRT: Assistente de transferência Bluetooth
+IEXPLORE: abre Internet Explorer
+IEXPRESS: abre o assistente de criação dos arquivos auto-extraíveis.
+JOURNAL: abre um novo registrador (Só no Vista)
+MAGNIFY: abre a lupa
+MBLCTR: abre o centro de mobilidade do Windows (Só no Vista)
+MIGWIZ: abre a ferramenta de transferência de arquivos e de configurações Windows (Só no Vista)
+MIGWIZ.EXE: abre a ferramenta de transferência de arquivos e de configurações Windows (Só no XP)
+MOVIEMK: abre o Windows Movie Maker
+MRT: executa o utilitário de remoção de malwares.
+MSDT: abre a ferramenta de diagnósticos e suporte da Microsoft
+MSINFO32: abre as informações do sistema
+MSPAINT: abre o “Paint”
+MSRA: abre a assistência remota do Windows
+MSTSC: abre a ferramenta de conexão da assistência remota
+NOTEPAD: abre o bloco de notas
+OSK: abre o teclado visual.
+PRINTBRMUI: abre o assistente de migração da impressora (Só no Vista)
+RSTRUI: abre a ferramenta de restauração do sistema (Só no Vista)
+SIDEBAR: abre o sidebar do Windows (Só no Vista)
+SIGVERIF: abre a ferramenta de verificação das assinaturas de arquivos
+SNDVOL: abre o misturador de volume
+SNIPPINGTOOL: abre a ferramenta captura de tela (Só no Vista).
+SOUNDRECORDER: abre o gravador
+STIKYNOT: abre o post-it (Só no Vista)
+TABTIP: abre o painel de entrada Tablet PC (Só no Vista)
+TASKMGR: abre o gerenciador de tarefas do Windows
+WAB: abre os contatos (Só no Vista)
+WERCON: abre a ferramenta de relatórios e de soluções de problemas (Só no Vista)
+WINCAL: abre o calendário do Windows (Só no Vista)
+WINCHAT: abre o software Microsoft de bate-papo (chat) na net (Só no XP)
+WINDOWSANYTIMEUPGRADE: permite a atualização do Windows Vista
+WINVER: abre a janela para que você conheça a versão do seu Windows
+WINWORD: abre o Word (se estiver instalado)
+WMPLAYER: abre o leitor Windows Media
+WRITE ou Wordpad: abre o Wordpad

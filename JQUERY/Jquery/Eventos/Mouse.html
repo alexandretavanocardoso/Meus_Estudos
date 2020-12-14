@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style></style>
+</head>
+
+<body>
+
+    <!-- Mouse -->
+    <h2>Ola</h2>
+
+    <a href="#">Link</a>
+
+    <p title="Titulo">Titulo</p>
+
+    <h3>Oi</h3>
+
+    <h4>Boa</h4>
+
+    <h5>Salve</h5>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('h2').mousedown(function() {
+                console.log('Apertei o mouse');
+            });
+
+            $('h2').mouseup(function() {
+                console.log('Soltei o Mouse');
+            });
+
+            $('a').click(function() {
+                console.log('Voce apertou e soltou');
+            });
+
+            $('p').contextmenu(function() {
+                console.log('Clicou com o bota direito');
+            });
+
+            $('p').dblclick(function() {
+                console.log('Double Click');
+            });
+
+            $('h3').mouseenter(function() {
+                $(this).css('color', 'red');
+            });
+
+            $('h3').mouseleave(function() {
+                $(this).css('color', 'black');
+            });
+
+            $('h3').hover(function() {
+                $(this).css('color', 'red');
+            });
+
+            $('h5').mousemove(function(event) {
+                console.log(event);
+            });
+        });
+    </script>
+</body>
+
+</html>

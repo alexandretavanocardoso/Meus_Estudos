@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Atributos</title>
+    <style></style>
+</head>
+
+<body>
+
+    <div>
+        <img src="../img/logo-hcode.svg" /><br>
+        <p>Fila - queue</p>
+        <button id="button"> animacao</button>
+        <button id="button1">Parar animação</button>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('#button').on('click', function() {
+
+                $('img').animate({
+                        marginTop: "+=30px"
+                    }, 2000)
+                    .delay(2000)
+                    .animate({
+                        marginLeft: "+=300px"
+                    })
+                    .queue(function() {
+                        $('p').text("Concluiu").css('color', 'red');
+                        $(this).dequeue();
+                    })
+                    // .delay(1000)
+                    // .clearQueue()
+                    //.fadeOut(2000);
+            });
+
+            $('#button1').on('click', function() {
+
+                // $('img').stop(true, true);
+                $('img').finish();
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>

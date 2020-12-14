@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Atributos</title>
+    <style></style>
+</head>
+
+<body>
+
+    <div>
+        <img src="../img/logo-hcode.svg" /><br>
+        <button id="button"> Ocultar / Exibir item</button>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div>
+        <p>fadeIn</p>
+        <button id="button1"> Ocultar / Exibir item</button>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div>
+        <h1>fadeTo</h1>
+        <button id="button2"> Ocultar / Exibir item</button>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div>
+        <h5>fadeToggle</h5>
+        <button id="button3"> Ocultar / Exibir item</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // $('img').slideUp();
+            // $('img').slideDown();
+            $('p').slideToggle(500, function() {
+                $(this).css('color', 'red');
+            });
+
+        });
+    </script>
+</body>
+
+</html>

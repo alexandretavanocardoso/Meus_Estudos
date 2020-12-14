@@ -1,0 +1,122 @@
+
+$(this).funçao - this se refere ao proprio elemento
+
+==> EVENTOS
+
+==> OBJECT 'event' ou 'e' - console.log(event); - ve todas possibilidades do event
+
+=> Métodos
+
+event.preventDefault() - Para a execução padrao do evento
+event.stopPropagation() - Para a propagração de eventos
+event.delegateTarget - Para quando ocorrer a delagaçao de eventos, esse métodos faz com que
+alguma tag ou id PAI, se responsabilize pelo seus filhos
+
+=> Retorna
+
+event.key - Retorna a tecla pressionada
+event.keyCode - Retorna o codigo da tecla pressionada
+even.which - Retorna o codigo da tecla pressionada
+event.type - Retorna o tipo do evento 
+event.target.localName - Retorna a tag com o nome 
+event.currentTarget - Retorna onde aconteceu o evento
+event.target.form - Usado na tag do form
+
+==> MOUSE
+
+.mousedown(function() {}) - Evento para quando pressionar o mouse
+.mouseup(function() {}) -Evento para quando soltar o mouse
+.click(function() {}) - Evento que faz o processo do mousedown e mouseup
+.contextmenu(function() {}) - Evento quando clica com o botão direito
+.dblclick(function() {}) - Evento quando da um double click
+.mouseenter(function() {}) - Evento quando  o mouse entra no elemento
+.mouseleave(function() {}) - Evento quando o mouse sai no elemento
+.hover(function() {}) - Evento que faz o processo do mouseenter e mouseleave
+.mousemove(function(event) {}) - Evento para quando o mouse se movimenta dentro de um elemento
+
+==> TECLADO
+
+=> Exemplo para mostar a tecla pressionada
+
+$('.i1').keydown(function(event) {
+    alert(`Clicou na Tecla ${event.keyCode}`)
+});
+
+.keydown(function(event){}) - Evento para quando clicar uma tecla
+.keyup(function(event){}) - Evento para quando soltar uma tecla
+.keypress(function(event) {}) - vento para quando pressionar uma tecla
+
+==>FORMULARIO
+
+.focus(function() {}) - Evento quando recebe o foco
+.blur(function() {}) - Evento para quando o elemento perder o foco
+.focusin(function() {}) - Evento quando o elemento pai do form é acionado
+.focusout(function() {}) - Evento quando o elemento pai do form perde o foco
+.change(function() {}) - Evento quando o campo mudar o valor do campo
+.select(function() {}) - Evento quando seleciona o valor do campo
+.submit(function(event) {}) - Evento quando o form esta correto
+
+==> BROWSER
+- Deve usar o WINDOW = Janela
+
+$(window).função(function(){});
+
+.resize(function() {}) - Evento quando o navegador mudar seu tamanho
+.scroll(function() {}) - Evento quando a barra de rolagem se mover
+
+==> METODO on() e off() e one()
+
+.on('Evento ou evetos', function(){});
+
+.off('evento') - Desliga o evento, para o evento do elemento
+
+.one('evento', function(){}); - Executa o evento apenas uma vez
+
+==> DELEGAÇAO DE EVENTOS
+
+.on('click', 'p', function() {}) - Usado para quando algum elemento é adicionado 
+dps do evento do pai 
+
+==> RETORNA UM OBJETO ARRAY
+
+.serializeArray() - Retorna um array
+
+==> TRIGGER - gatilho para executar o evento manualmente
+
+$('elementos').trigger('evento');
+
+ou
+
+$('elementos').evento();
+
+
+==> CRIANDO EVENTOS - .on() e .trigger()
+
+$('div').on('initPage', function() {
+    $(this).find('p').append(' - Seja bem vindo').css({
+        color: 'red',
+        left: '100px'
+    });
+
+    $(this).find('img').animate({
+        width: '400px'
+    });
+})
+            
+// Chamando manualmente = $('div').trigger('initPage');
+
+==> USANDO NAMESPACES
+
+$('elementos').on('evento.nameSpace', function(){})
+
+$('p').on('click.colorBlue', function() {
+    $(this).toggleClass('teste');
+});
+
+$('p').on('click', function() {
+    $(this).toggleClass('teste_');
+});
+
+$('button').on('click', function() {
+    $('p').off('click.colorBlue');
+});

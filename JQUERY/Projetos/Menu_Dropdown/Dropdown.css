@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.menu {
+    height: 40px;
+    background-color: black;
+    color: #fff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    float: left;
+    padding: 0 30px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.menu1 {
+    height: 40px;
+}
+
+.submenu1 {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 120px;
+    background-color: black;
+    display: none;
+}

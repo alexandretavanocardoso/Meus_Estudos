@@ -1,0 +1,10 @@
+ $('#Vermelho').click(function(){
+    $('p').css("color", "red");
+    $('#mensagem').text("Cor Alterada")
+    .css({
+        color: 'red',
+        border: '1px solid red',
+        backgroudColor: 'blue'
+    });
+   
+});

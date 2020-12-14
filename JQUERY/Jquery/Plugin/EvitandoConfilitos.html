@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style></style>
+</head>
+
+<body>
+
+    <h1>Hcode</h1>
+    <h2>Plugin</h2>
+    <button>Plugin Basico</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        (function($) {
+            $.fn.changeText = function() {
+                this.css('font-size', '50px');
+
+                // com o return podemos adicionar outro metodo na chamada do nosso
+                //plugin
+                return this;
+            }
+        })(jQuery);
+
+
+        $(document).ready(function() {
+
+            $('button').on('click', function() {
+                $('h1').changeText().css('color', 'red');
+                $('h2').changeText();
+            });
+
+        });
+    </script>
+</body>
+
+</html>

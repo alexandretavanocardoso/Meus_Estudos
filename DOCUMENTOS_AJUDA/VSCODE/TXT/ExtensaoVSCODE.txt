@@ -1,0 +1,53 @@
+
+GitLens — Git supercharged - Ligação com github, mostra varias informações
+
+Git History - Ligação com github, mostra varias informações
+
+Material Icon Theme - Icones
+
+Beautify - Colorir código
+
+Auto Rename Tag - Mexer em uma ou mais Tags juntas
+
+CSS Peek - Mostra o Css da Classe id Tag
+
+HTML CSS Support - Css Html AutoCompleta
+
+BookMarks - Marcar linha do código (Ctrl + alt + K)
+
+Bootstrap - Forma os códigos necessarios pa funcionar o botstrap "(B4)" B(Versao)
+
+Live Server - Tela ao vivo
+
+Dracula Official - Tema Escuro
+
+Pomodoro Timer - Mostra o tempo de tranalho determinado por voce
+
+Power Mode - Digitar código com Particulas saindo do código
+
+Rainbow Bracketes - Colorir os colchetes, parenteses, chaves
+
+Path Intellisense - Mostra as alternativas das pastas, para linkar
+
+Guides - Cria uma linha imaginaria para saber se o código esta identado
+
+Color HightLight - Mostra as cores no css EX. #fff fica uma caixa branca em volta
+
+SASS - Css dinamico .scss 
+
+Visual Studio IntelliCode - Auto Completa
+
+Speel checker = Erro no codigo
+
+Pin editor tabs = Fixar guias do editor
+
+
+
+
+
+
+
+
+
+
+

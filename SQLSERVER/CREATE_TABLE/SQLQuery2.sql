@@ -1,0 +1,34 @@
+
+/* Cria Tabela*/
+
+CREATE TABLE Canal(
+		Canalid INT PRIMARY KEY,
+		Nome VARCHAR(150) NOT NULL,
+		ContagemInscritos INT DEFAULT 0,
+		DataCriacao DATETIME NOT NULL
+);
+
+CREATE TABLE Video(
+	Videoid INT PRIMARY KEY,
+	Nome VARCHAR(150) NOT NULL,
+	Vizualizacoes INT DEFAULT 0,
+	Likes INT DEFAULT 0,
+	Dislikes INT DEFAULT 0,
+	Duracao INT NOT NULL,
+	Canalid INT FOREIGN KEY REFERENCES Canal(CanalID)
+);
+
+--DESAFIO
+
+CREATE TABLE Estado2(
+		Estado2id INT PRIMARY KEY,
+		Nome VARCHAR(150) NOT NULL
+);
+
+CREATE TABLE Cidade1(
+		Cidade1id INT PRIMARY KEY,
+		Nome VARCHAR(150) NOT NULL,
+	    Estado2id INT FOREIGN KEY REFERENCES Estado2(Estado2ID)
+);
+
+SELECT * FROM Cidade1

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores com Filtros de vidibilidade</title>
+
+</head>
+
+<body>
+
+    <div class="cars">
+        <h3>Carros</h3>
+        <ul class="cars_list">
+            <li style="display: none;">Uno</li>
+            <li>Palho</li>
+            <li>Ônix</li>
+            <li>Fox</li>
+            <li>Fiesta</li>
+        </ul>
+    </div>
+
+    <div class="cars">
+        <h3>Carros</h3>
+        <ul class="cars_list">
+            <li style="display: none;">Ferrari </li>
+            <li>Palho </li>
+            <li>Ônix</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <button id="show_cars" type="button">Mostrar carros escondidos</button>
+
+    <button id="hidden_cars" type="button">Mostrar carros visiveis</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            // Filtros Vidibilidade
+
+
+            // Seleciona os elementos invisiveis
+            // $('.cars_list li:hidden').show();
+
+            $('#show_cars').click(function() {
+                $('.cars_list li:hidden').css('color', 'red').show();
+            });
+
+            // :visible
+            $('#hidden_cars').click(function() {
+                $('.cars_list li:visible').hide();
+            })
+        });
+    </script>
+</body>
+
+</html>

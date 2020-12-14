@@ -1,0 +1,3 @@
+<a href="https://www.google.com" target="_blank">Ir para o Google em nova página</a>
+
+target="_blank"

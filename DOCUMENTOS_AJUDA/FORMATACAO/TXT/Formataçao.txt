@@ -1,0 +1,61 @@
+O QUE È BOOT ?
+
+--> Processo de inicialização de um computador, que acontece quando
+voce liga a maquina e o total carregamento do sistema operacional é instalado
+
+PORTAL EXCLUSIVO
+
+--> http://downspace.tk/ ou https://www.microsoft.com/pt-br/software-download/home  
+
+PEN DRIVE BOOTAVEL
+
+--> Software "YUMI" (Nele escolhe o Pen Drive, o sistema e a ISO)
+--> Ter a ISO do Sistema Operacional
+
+CONFIGURANDO A ORDEM DE INICIALIZAÇÃO
+
+--> Plugar Pen Drive Bootavel
+--> Ligar pressionando "DEL" (Delete) ou F2
+--> Ir em "Boot"
+--> Colocar o Pen Drive em 1° opção e o HD em 2 ° opção
+--> Sair e Salvar F10
+
+BIOS/CONFIGURAÇÕES ERRADAS
+
+--> Caso queira voltar a BIOS toda como era antes,
+Vá em "Exit" e "Load Default Settings"
+
+SETUP
+
+--> Um método pra formata
+--> F12
+--> Quando entrar apertar "Enter" na opção que deseja
+--------------------------------------------------------------
+BACKUP (BKP) O QUE È ?
+
+--> Antes de formatar
+--> Salvar os arquivos em outro dispositivo
+
+MÉTODOS DE ARMAZENAMENTO
+
+--> HD Externo 
+--> Pen Drive		
+--> Nuvem (Ficar em um servidor online EX. Google Drive, One Drive)
+
+DADOS/DRIVERS	
+
+--> Dados: Backup dos arquivos 
+--> Drivers: Faz a comunicação com o Hardware 
+--> Aplicativo para salvar os drivers do pc para o Pen Drive  "Driver Backup" 
+--> Link: Driver Backup: http://bit.ly/2RrRHMn
+
+   
+
+PRATICA PARA TER OS ARQUIVOS PARA O BACKUP MAIS FACIL
+
+--> Biblioteca - Computador - Disco local C - Usuario - Cliente
+
+VERIFICAÇÃO
+
+--> Ver se as pastas não contém virus (Antivirus)
+--> Caso tiver Virus e nao conseguir arrumar, exclua o arquivo

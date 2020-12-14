@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        .teste {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>TESTE</p>
+        <p>TESTE</p>
+        <p>TESTE</p>
+        <p>TESTE</p>
+        <p>TESTE</p>
+        <img id="i4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwbYfgOwsC1n2vMV7xBQR0WlE0w2LCyZhNGw&usqp=CAU" />
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('div').on('initPage', function() {
+                $(this).find('p').append(' - Seja bem vindo').css({
+                    color: 'red',
+                    left: '100px'
+                });
+
+                $(this).find('img').animate({
+                    width: '400px'
+                });
+            });
+
+            setTimeout(function() {
+                $('div').trigger('initPage');
+            }, 1500);
+
+            // $('div').trigger('initPage');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style></style>
+</head>
+
+<body>
+
+    <!-- Teclado -->
+    <label for="">Sou uma label</label><br>
+    <input type="text" class="i1" /><br><br>
+    <input type="text" class="i2" /><br><br>
+    <input type="text" class="i3" /><br><br>
+    <button type="submit">Submit</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.i1').keydown(function(event) {
+                alert(`Clicou na Tecla ${event.keyCode}`)
+            });
+
+            $('.i2').keyup(function(event) {
+                console.log(`Clicou na Tecla ${event.keyCode}`)
+            });
+
+            $('.i3').keypress(function(event) {
+                console.log(`Clicou na Tecla ${event.keyCode}`)
+            });
+
+        });
+    </script>
+</body>
+
+</html>

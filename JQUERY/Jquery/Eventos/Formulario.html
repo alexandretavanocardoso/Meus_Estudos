@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style></style>
+</head>
+
+<body>
+
+    <!-- Teclado -->
+    <label for="">Sou uma label</label><br>
+    <input type="text" class="i1" /><br><br>
+    <input type="text" class="i2" /><br><br>
+    <div id="focosin">
+        <input type="text" class="i3" /><br><br>
+        <button type="submit">Submit</button>
+    </div>
+    <input type="text" class="i4" /><br><br>
+    <input type="text" class="i5" /><br><br>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.i1').focus(function() {
+                $(this).css('background', 'red');
+            });
+
+            $('.i2').blur(function() {
+                $(this).css('background', 'blue');
+            });
+
+            $('#focosin').focusin(function() {
+                console.log('Focosin');
+            });
+
+            $('#focosin').focusout(function() {
+                console.log('focusout');
+            });
+
+            $('.i4').change(function() {
+                console.log(`Valor do campo: ${$(this).val()}`)
+            })
+
+            $('.i5').select(function() {
+                console.log('Voce selecionou o valor do campo')
+            })
+
+            $('#focosin').submit(function(event) {
+
+                event.preventDefault();
+
+                console.log($(this).serializeArray());
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+﻿.bgbox{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    display: none;
+}
+
+.divbox{
+    position: fixed;
+    left: 50%;
+    top:50%;
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    margin-left: -270px;
+    margin-top: -185px;
+    padding: 20px;
+    display: none;
+}

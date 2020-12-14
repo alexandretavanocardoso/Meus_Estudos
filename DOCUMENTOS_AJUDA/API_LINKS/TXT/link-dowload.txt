@@ -1,0 +1,4 @@
+<a href="urldodownload"
+   download="nomedoarquivo.exe">
+  Faça o download do Firefox 39 para Windows
+</a>

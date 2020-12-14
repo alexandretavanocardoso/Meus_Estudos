@@ -1,0 +1,14 @@
+$.Post('URL', data, function(response){});
+
+$.Get('URL', data, function(response){});
+
+*$.ajax({
+	url: '',
+	method: '',
+	success: function(response){
+
+	},
+	error: function(err){
+
+	}
+});

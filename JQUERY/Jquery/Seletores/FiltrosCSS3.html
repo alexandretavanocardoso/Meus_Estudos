@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores com Filtros do CSS3</title>
+
+</head>
+
+<body>
+
+    <div class="cars">
+        <h3>Carros</h3>
+        <ul class="cars_list">
+            <li>Uno</li>
+            <li>Palho</li>
+            <li>Ônix</li>
+            <li>Fox</li>
+            <li>Fiesta</li>
+        </ul>
+    </div>
+
+    <div class="cars">
+        <h3>Carros</h3>
+        <ul class="cars_list">
+            <li>Ferrari</li>
+            <li>Palho</li>
+            <li>Ônix</li>
+            <li>Fox</li>
+            <li>Fiesta</li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            // Filtros CSS3
+
+            // Seleciona os ultimos elementos
+            // $('.cars_list li:last-child').css('color', 'red');
+
+            //Seleciona os primeiros elementos
+            // $('.cars_list li:first-child').css('color', 'red');
+
+            // Selecio de maneira Alternada - apenas pares
+            // $('.cars_list li:nth-child(even)').css('color', 'red');
+
+            // Seleciona de maneira Alternada - apenas impares
+            // $('.cars_list li:nth-child(odd)').css('color', 'red');
+
+            // Seleciona em posição espedifica
+            // $('.cars_list li:nth-child(1)').css('color', 'red');
+
+            // Seleciona em posição especifica começando do ultimo elemento
+            // $('.cars_list li:nth-last-child(2)').css('color', 'red');
+        });
+    </script>
+</body>
+
+</html>
