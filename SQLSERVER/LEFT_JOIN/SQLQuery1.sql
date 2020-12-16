@@ -1,6 +1,6 @@
 
 
-/* Junção de Tabelas, Porem pega os dados Nulls*/
+/* Junção de Tabelas, Porem tambem pega os dados Nulls*/
 
 SELECT TA.TabelaAId, TB.NomeColunaTabelaB
 FROM TabelaA TA

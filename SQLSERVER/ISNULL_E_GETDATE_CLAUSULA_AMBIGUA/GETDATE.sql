@@ -1,0 +1,9 @@
+
+
+/* GETDATE() */
+
+-- FUNÇÃO QUE RETORNA A DATA ATUAL
+
+SELECT GETDATE();
+GO
+
