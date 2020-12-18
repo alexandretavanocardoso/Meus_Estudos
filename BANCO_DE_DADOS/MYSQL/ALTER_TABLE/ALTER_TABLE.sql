@@ -1,5 +1,6 @@
 
 /* ALTER TABLE */
+--
 
 -- ADICIONADO UMA PK
 ALTER TABLE NomeTabela
