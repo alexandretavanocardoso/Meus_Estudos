@@ -7,7 +7,7 @@
 ## Eae developers
 
 Nesse repositório estou buscando ajudar desenvolvedores desde o Juniôr ao Seniôr, com documentações, códigos, projetos, tudo sobre
-HTML, CSS, JS, PHP, MySQL, SQL, PostgreSQL entre muitos mais, que aos poucos irei dando Updates para a maior satisfação.
+HTML, CSS, JS, PHP, MySQL, SQL entre muitos mais, que aos poucos irei dando Updates para a maior satisfação.
 
 Pretendo ir sempre adicionando algo, após um término de curso, conhecimento, artigos, documentações, entre muitas outras coisas.
 
