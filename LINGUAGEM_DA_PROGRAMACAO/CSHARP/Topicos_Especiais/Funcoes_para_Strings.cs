@@ -1,2 +1,0 @@
-
-/* FUNÇÕES PARA STRINGS */
