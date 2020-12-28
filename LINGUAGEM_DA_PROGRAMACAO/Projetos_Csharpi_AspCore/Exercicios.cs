@@ -50,3 +50,42 @@ Console.WriteLine(altura);
 
 /* 3 */
 
+Console.Write("Digite a quantidade de Pessoas: ");
+int P = int.Parse(Console.ReadLine());
+
+Pessoa[] Vect = new Pessoa[P];
+
+for (int i = 0; i < P; i++)
+{
+	Console.Write("Digite o nome #{0}: ", i );
+	string nomeDigitado = Console.ReadLine();
+
+	Console.Write("Digite o email #{0}: ", i);
+	string emailDigitado = Console.ReadLine();
+
+	Console.Write("Digite o quarto #{0}: ", i);
+	int quartosDigitado = int.Parse(Console.ReadLine());
+
+	Vect[i] = new Pessoa { 
+		Nome = nomeDigitado, 
+		Email = emailDigitado,
+		Quartos = quartosDigitado
+	};
+}
+
+string nome = " ";
+string email = " ";
+int quarto = 0;
+for (int i = 0; i < P; i++)
+{
+	nome = Vect[i].Nome;
+	email = Vect[i].Email;
+	quarto = Vect[i].Quartos;
+
+	Console.WriteLine("Nome: " + nome);
+	Console.WriteLine("E-mail: " + email);
+	Console.WriteLine("Numero Quarto: " + quarto);
+	Console.WriteLine("----------------------------------------------");
+}
+
+
