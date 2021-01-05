@@ -1,2 +1,0 @@
-
-/* METODOS ABSTRATOS */
