@@ -1,0 +1,2 @@
+
+/* CLASSES E MÉTODOS SELADOS */
