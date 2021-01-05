@@ -1,0 +1,127 @@
+﻿
+========>>>> SITE GITHUB <<<<========
+
+===>> ABA CODE
+=> Todo o codigo do repositorio
+
+===>> ABA ISSUES - Issues - São tarefas a serem realizadas no projeto e etc
+=>> Podemos criar uma nova issues
+=>> Comentar no repositório de outra pessoa
+=>> Colocar a categoria do problema
+
+===>> ABA PULL REQUEST IMPORTANT! <<===
+
+==> Realizando <==
+=> Após forkar e quiser compartilhar com o dono do repositório
+=> Pull Request -> Ver se as informações estão certas -> Create pull Request 
+-> Escreve as informações -> Create pull Request
+
+==> Verificando e Aceitando <==
+=> Se voce aceita receber as atualizações do seu repositorio que outro usuario fez
+=> Não esquecer de pegar o ID do pull request pois precisaremos usar localmenta
+=> git fetch origin pull/ID/head:NomeBranchNovo - usar localmente para baixar o pull request enviado pelo usuario 
+e criando um branch para testar
+=> Após testar e veririficar, voltar pro Github entrar no pull request
+e clica no botao merge pull request, para fazer a junção no master
+=> Por final dar um git pull no branch master para o atualizar
+
+===>> ABA INSIGHTS IMPORTANT!
+=>> Pulse
+=> Commits realizados e quem mais vez commit em gráficos
+
+=>> Contributors
+=> Mostra a evolução dos commits
+
+=>> Community
+=>- Mostra outros arquivos e link de recomendação pra Open Source
+
+=>> Traffic
+=> Quantidade de clones, visitantes e outros
+
+=>> Commits
+=> Mostra um graficos dos commits
+
+=>> code frequency
+
+=>> Dependency graph
+
+=>> Network
+=> Mostra os pontos dos commits, branchs
+
+=>> Forks IMPORTANT! <<=
+=> Seria fokar outro repositório de outro usuário 
+para o seu github
+=> Vira um repositório seu
+=> Seria quase um clone
+
+========>>>> FORÇA A AUTENTICAÇÃO DO USUARIO NO REPOSITORIO <<<<========
+
+=> git remote set-url origin LinkEndereçoRepositorio
+
+========>>>> VERIFICANDO SE TEM REPOSITORIO REMOTO <<<<========
+
+=> git remote -v - Verifica se tem algum repositorio remoto registrado
+
+========>>>> CLONE <<<<========
+
+-- no github
+
+=> code -> https || ssh || Github Cli -> Copiar o endereço
+
+-- no terminal
+
+=> git clone LinkEndereçoGithub
+
+========>>>> PULL <<<<========
+
+=> git pull origin master
+
+========>>>> COLABORADORES <<<<========
+
+=> settings -> Manage acess -> Invite Collaborator
+
+========>>>> CONSULTANDO O HISTÓRICO DE COMMITS <<<<========
+
+=> Commits
+- Copia o hash Id
+- Mostra o hash Id
+- Mostra as aleterações
+
+========>>>> DESFAZENDO CHECKOUTS <<<<========
+
+=> git checkout  HEAD -- . - Volta todos os arquivos para o estado anterior Tracked -> Untracked
+=> git checkout  HEAD -- NomeArquivo - Volta o arquivo para o estado anterior Tracked -> Untracked
+=> git checkout -- NomeArquivo - Volta o arquivo como era antes de ir pra ser monitorado 
+=> git checkout -- . - Volta todos os arquivos no estado original
+=> git checkout -- NomeArquivo - Volta o arquivo no estado original
+
+========>>>> GIT REVERT <<<<========
+
+=> git revert hash ID - Cria um novo commit, porem reverte a ação do commit selecionado
+
+========>>>> GIT RESET <<<<========
+
+=> git reset HEAD~1 - Desfaz o commit por numeração(qtd de commits que vai remover)
+
+========>>>> RESOLVENDO CONFLITOS <<<<========
+
+=> Se estiver trabalhando com colaboradores, antes de escrever algo ao código
+lembra te dar um git pull origin master - para baixar as atualizações do projeto
+=> Ver as mensagens que o proprio git mostra pra você
+
+========>>>> USANDO FERRAMENTA GRAFICA PARA ALGUNS CODIGOS <<<<========
+
+=> No VS Code - Todas as operações ficam no Source Control
+
+======>>> LETRAS NA FERRAMENTA
+
+M - Modified - Modificado
+U - Untracked - Não Monitorado
+
+
+
+
+
+
+
+

@@ -1,0 +1,223 @@
+﻿
+========>>>> HELPS <<<<========
+
+git --help - Mostra os comando do git
+git help -g - Mostra os subcomandos do git
+git help -a - Mostra os subcomandos do git
+
+========>>>> FORÇA A AUTENTICAÇÃO DO USUARIO NO REPOSITORIO <<<<========
+
+=> git remote set-url origin LinkEndereçoRepositorio
+
+========>>>> REMOVENDO CONFIGURAÇÃO GLOBAL E LOCAL <<<<========
+
+=> Global = git config --global --unset Configuração desejada
+=> Global EX. git config --global --unset credential.helper
+
+=> Local = git config --unset Configuração desejada
+=> Local EX. git config --unset credential.helper
+
+========>>>> INICIALIZANDO <<<<========
+
+=> git init -- Inicializar o git no projeto
+=> git init --bare - Inicia um centralizador no repositorio principal local
+
+========>>>> GIT STATUS <<<<========
+
+=> git status -- Ver sobre o projeto
+
+========>>>> .GITIGNORE <<<<========
+
+=> .gitignore -- Arquivo criado no projeto para ignorar arquivos ou diretórios (Faz o git nao monitorar aquele arquivo)
+(Arquivo = NomeArquivo.extensão) (Diretório = **NomeDiretório) (Extensão do Arquivo = *.Extensão)
+
+========>>>> CONFIGURAÇÃO DO USUARIO <<<<========
+
+=> Local = git config user.name "Seu Nome" 
+OU 
+Global = git config --global user.name "Seu Nome"
+
+=> Local = git config user.email "Seu E-mail"
+OU 
+Global = git config --global user.email "Seu E-mail"
+
+========>>>> COLOCANDO O USUARIO APENAS UMA VEZ <<<<========
+
+=> git config credential.helper store - Salva o usuario e senha do projeto, 
+sendo assim nao precisara informar o usuario nem a senha denovo
+
+========>>>> MONITORANDO O ARQUIVO <<<<========
+
+=> .git add NomeArquivo -- Git começar a monitorar o arquivo 
+=> .git add . -- Monitora todos arquivos
+
+========>>>> TIRA ARQUIVO DO MONITORAMENTO <<<<========
+
+=> git restore --staged NomeArquivo - Tira o arquivo do staged, tira do monitoramento
+
+========>>>> COMMITANDO OS ARQUIVOS <<<<========
+
+-- Obs: Dependendo o nome que colocarmos no commit, ele pode fehar uma
+issues comparando a tarefa com o nome do commit
+
+=> git commit -m "Mensagem" - Fotografia do projeto
+=> master[id] - Após dar o commit ele cria o hash Id - seria o id daquele 
+
+========>>>> ARRUMANDO ERRO NO COMMIT COM --AMEND <<<<========
+
+=> git commit --amend -m "Mensagem" - Renomeia o commit, o ultimo criado
+=> git commit --amend -m "Mensagem" - Tambem serve se formos adicionar outro arquivo no ultimo commit
+=> git commit --amend -m "Mensagem" - Tambem serve se formos editar no mesmo commit (o ultimo commit)
+
+========>>>> GIT LOG <<<<========
+
+=> git help log - Mostra o manual do log
+=> Podemos concatenar informações
+=> git config core.pager cat - mostra todas mudanças no (git log) - obs> deixar global = --global
+=> git config core.pager less - Volta no padrão do (git log)
+=> git log - Ve históricos dos projetos pelo hash Id
+=> git log hash Id - Mostra o commit selecionado pelo hash Id
+=> git log -Numero - Mostra os ultimos historicos pelo numero ex. -1
+=> git log --oneline - Mostra todos commits em uma linha, um resumo
+=> git log --before="Ano-Mes-Dia" - Traz todos commits Anteriores data selecionada
+=> git log --after="Ano-Mes-Dia" - Traz todos commits Após data selecionada
+=> git log --since="numero days||month||year ago" - Traz os commits desde a data colococada 
+=> git log --author="Nome Autor" - Traz os commits pelo nome do autor
+=> q - sair | b - voltar pra anterior | /pesquisa - pesquisar na mensagem do commit
+
+========>>>> RENOMEA ARQUIVO & DELETA ARQUIVO <<<<========
+
+=> git mv NomeArquivo NovoNomeArquivo - Renomea o nome do arquivo
+=> git rm NomeArquivo - Deleta o arquivo
+
+========>>>> COMPARANDO ARQUIVOS <<<<========
+
+=> git diff --staged - Compara o arquivo que esta pronto pra ser commitado com o ultimo commit
+=> git diff hash Id - Compara o arquivo atual com outro commit selecionado pelo hash Id
+=> git diff hashIdAntigo..hashIdNovo - Compara o arquivo selecionados, do mais antigo pro mais novo
+
+========>>>> RESETANDO COMMIT <<<<========
+
+=> git reset HEAD --hard - Tira as alterações da "cabeça" dos commit. no ultimo commit 
+=> git reset HEAD^ --hard - Descarta o ultimo commit e volta pro anterior
+
+========>>>> GIT CHECKOUT <<<<========
+
+=> git checkout  HEAD -- . - Volta todos os arquivos para o estado anterior Tracked -> Untracked
+=> git checkout  HEAD -- NomeArquivo - Volta o arquivo para o estado anterior Tracked -> Untracked
+=> git checkout -- NomeArquivo - Volta o arquivo como era antes de ir pra ser monitorado 
+=> git checkout -- . - Volta todos os arquivos no estado original
+=> git checkout -- NomeArquivo - Volta o arquivo no estado original
+=> git checkout hash Id - Volta no tempo do commit (Selecionando o hashId dele) 
+=> git checkout master - Volta no Commit mais atual
+=> git checkout NomeBranch - Acessa o branch
+=> git checkout -b NomeBranch - Cria o branch e ja acessa ele
+=> git checkout NomeTag - Acessar a tag
+=> git checkout master - Acessar a master
+
+========>>>> BRANCH <<<<========
+
+-- Ramificação do projeto
+-- Branch master - ramo principal, linha do tempo do projeto
+-- Pode ter varios branchs no projeto, branchs para testes, funcionalidades
+-- Quando cria um novo branch é chamadado de "base"
+
+=> git branch - Para ver os branch do projeto
+=> git branch NomeBranch - Cria um branch
+=> git checkout NomeBranch - Acessa o branch
+=> git branch -d NomeBranch - Avisa se tem certeza, deleta se estiver em merge
+=> git branch -D NomeBranch - Deleta o brach
+=> git checkout -b NomeBranch - Cria o branch e ja acessa ele
+
+========>>>> MERGE <<<<========
+
+-- Junção dos commits do branch para o branch principal
+-- Fazer no master
+
+=> git merge NomeBranchNovo - Junta o branch com o branch principal
+=> git branch -d NomeBranch - Deleta o brach após fazer o merge
+
+========>>>> REBASE <<<<========
+
+-- Remonta a base, o branch novo, é voltado pra o branch principal 
+no momento em que foi criado
+
+=> git rebase NomeBranch - Mesma Funçao do merge
+
+========>>>> CLONE <<<<========
+
+-- Clona o repositório existente
+-- "." - o . significa que vai clonar "aqui" na maquina do colaborador
+
+=> git clone LinkRepositorio . - Clona o repositorio
+
+========>>>> PUSH <<<<========
+
+-- Salva os arquivos
+
+=> git push - Se estiver em um clone o repositorio principal deve ser "bare repository"
+=> git push origin NomeTagCriada - Salva a tag com o projeto em si 
+
+========>>>> FETCH <<<<========
+
+-- Baixa as arquivo do repositorio principal, mas nao faz o merge
+
+=> git fetch
+
+-- Para fazer o rebase || merge, tem q dar um:
+
+=> git rebase
+
+========>>>> PULL <<<<========
+
+-- A junção do fetch com o rebase
+-- Pode abrir algumas informações ex. ^X - ctrl X
+-- SE abrir a ideia é dar um ^O - ctrl O, enter - pra salvar e ^X - ctrl X - pra sair
+
+=> git pull
+
+========>>>> BARE REPOSITORY <<<<========
+
+-- Um centralizador do repositorio principal EX. Github
+
+=> git init --bare - Inicia um centralizador no repositorio principal local
+
+========>>>> TAGS <<<<========
+
+-- Para definir versões estáveis, pronta pra uso
+
+=> git tag - mostra as tags
+=> git tag NomeTag - Cria a tag
+=> git push origin NomeTagCriada - Salva a tag com o projeto em si 
+=> git checkout NomeTag - Acessar a tag
+=> git checkout master - Acessar a master
+=> git switch -c NomeBranch - Criando um branch na versao, tem que estar acessado na tag
+
+========>>>> GIT REVERT <<<<========
+
+=> git revert hash ID - Cria um novo commit, porem remove uma linha de alteração do commit passado
+
+========>>>> GIT RESET <<<<========
+
+=> git reset HEAD~1 - Desfaz o commit por numeração(qtd de commits que vai remover)
+
+========>>>> RESOLVENDO CONFLITOS <<<<========
+
+=> Se estiver trabalhando com colaboradores, antes de escrever algo ao código
+lembra te dar um git pull origin master - para baixar as atualizações do projeto
+=> Ver as mensagens que o proprio git mostra pra você
+
+========>>>> USANDO FERRAMENTA GRAFICA PARA ALGUNS CODIGOS <<<<========
+
+=> No VS Code - Todas as operações ficam no Source Control
+
+======>>> LETRAS NA FERRAMENTA
+
+M - Modified - Modificado
+U - Untracked - Não Monitorado
+
+
+
+
+
+ 
