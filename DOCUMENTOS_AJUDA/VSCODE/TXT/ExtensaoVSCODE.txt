@@ -1,4 +1,6 @@
 
+Markdown Preview Enhanced - Extensão
+
 GitLens — Git supercharged - Ligação com github, mostra varias informações
 
 Git History - Ligação com github, mostra varias informações
