@@ -1,91 +1,24 @@
 
 
-/* COMANDOS  */
+/* FUNC (Exemplo com Select) */
 
------ Console.WriteLine() -----
+- Representa um método que recebe 0 ou mais argumentos e retorna valor
 
-// Mostra no console e faz quebra de linha 
+-- 16 Sobrecargas igual Action<>
 
------ Console.Write() -----
+/* Exemplo */
 
-// Mostra na console, mas não faz quebra de linha
+List<Produto> lista = new Lista<Produto>();
 
+lista.Add(new Produto("Garfo"));
+lista.Add(new Produto("Ropa"));
 
------ Console.ReadLine() -----
+List<string> result = list.Select(NameToUpper).ToList(); -- toList() - converte pra listas
+foreach (string s in result){
+	Console.WriteLine(s);
+}
 
-// Armazena os dados digitados
-
-// Le os dados String
-
------ Split(' ') -----
-
-// Armazena os dados digitados
-
-// A variavel tem que ser declarada como Vetor - string[] vet = Console.ReadLine.Split(' ');
-
-// Armazena pos espaço dado, armazenando em forma de um vetor
-
-// Para armazenar cada palavra de vetor deve usar var[Numero] = string p1 vet[0];
-
------ int.Parse() -----
-
-// Converte para numero Inteiro
-
------ char.Parse() -----
-
-// Converte para Char
-
------ double.Parse(  ,CultureInfo.InvariantCulture) -----
-
-// Converte para Double
-
-// CultureInfo.InvariantCulture - Serve para poder colcoar numero com ".", Ex: 4.
-
-// para usar o CultureInfo.InvariantCulture - tem que adicionar Using System.Globalization
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
+/* aux */
+static string NameToUpper(Produto p){
+	return p.Name.ToUpper();
+}

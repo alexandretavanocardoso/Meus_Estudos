@@ -1,91 +1,24 @@
 
 
-/* COMANDOS  */
+/* PREDICATE  */
 
------ Console.WriteLine() -----
-
-// Mostra no console e faz quebra de linha 
-
------ Console.Write() -----
-
-// Mostra na console, mas não faz quebra de linha
+-- Representa um método que recebe um objeto do tipo T e retorna um valor bool
 
 
------ Console.ReadLine() -----
+public delegate bool Predicate<in T>(T obj);
 
-// Armazena os dados digitados
+// Exemplo
 
-// Le os dados String
+List<Produto> lista = new Lista<Produto>();
 
------ Split(' ') -----
+lista.Add(new Produto("Garfo"));
+lista.Add(new Produto("Ropa"));
 
-// Armazena os dados digitados
+// Exemplo predicate com RemoveAll
 
-// A variavel tem que ser declarada como Vetor - string[] vet = Console.ReadLine.Split(' ');
+lista.RemoveAll(p => p.Name == "Garfo");
 
-// Armazena pos espaço dado, armazenando em forma de um vetor
+foreach (Produto p in lista){
+	Console.Write(p);
+}
 
-// Para armazenar cada palavra de vetor deve usar var[Numero] = string p1 vet[0];
-
------ int.Parse() -----
-
-// Converte para numero Inteiro
-
------ char.Parse() -----
-
-// Converte para Char
-
------ double.Parse(  ,CultureInfo.InvariantCulture) -----
-
-// Converte para Double
-
-// CultureInfo.InvariantCulture - Serve para poder colcoar numero com ".", Ex: 4.
-
-// para usar o CultureInfo.InvariantCulture - tem que adicionar Using System.Globalization
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
