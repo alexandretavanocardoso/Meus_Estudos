@@ -1,91 +1,31 @@
 
 
-/* COMANDOS  */
+/* MULTICAST DELEGATES  */
 
------ Console.WriteLine() -----
+-- Delegates que guardam referencia para mais de um método
 
-// Mostra no console e faz quebra de linha 
+-- para adicionar um referencia, pode ser uasr o operador +=
 
------ Console.Write() -----
+-- A chamada Invoke executa todos os metodos na ordem em que foram adicionados
 
-// Mostra na console, mas não faz quebra de linha
-
-
------ Console.ReadLine() -----
-
-// Armazena os dados digitados
-
-// Le os dados String
-
------ Split(' ') -----
-
-// Armazena os dados digitados
-
-// A variavel tem que ser declarada como Vetor - string[] vet = Console.ReadLine.Split(' ');
-
-// Armazena pos espaço dado, armazenando em forma de um vetor
-
-// Para armazenar cada palavra de vetor deve usar var[Numero] = string p1 vet[0];
-
------ int.Parse() -----
-
-// Converte para numero Inteiro
-
------ char.Parse() -----
-
-// Converte para Char
-
------ double.Parse(  ,CultureInfo.InvariantCulture) -----
-
-// Converte para Double
-
-// CultureInfo.InvariantCulture - Serve para poder colcoar numero com ".", Ex: 4.
-
-// para usar o CultureInfo.InvariantCulture - tem que adicionar Using System.Globalization
-
------  -----
+-- Seu uso faz sentido para metodos void
 
 
------  -----
+Ex.
 
+public static void ShowMax(double X, double y){
+	
+}
 
------  -----
+public static void ShowSum(double X, double y){
+	
+}
 
+double a = 12;
+double b = 12;
 
------  -----
+BinaryNumericOperation op = CalculationService.ShowSum;
+op += CalculationService.ShowMax;
 
+op.Invoke(a,b)
 
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
-
-
------  -----
