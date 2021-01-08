@@ -1,0 +1,7 @@
+
+- C#
+- C# Extensions -- Ajuda na criação das interfaces, classes
+- Bracket Pair Colorizer -- ver as chaves. parentess fechando
+- Path Intellisense
+- NuGet Package Manager
+
