@@ -1,5 +1,7 @@
 
 dotnet -h ==> Help
+dotnet --version ==> Versão do dotnet
+dotnet --list-sdks ==> Lista de versões instaladas no computador
 
 ==>> COMANDOS DO SDK <<==
 
