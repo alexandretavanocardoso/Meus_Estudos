@@ -1,0 +1,46 @@
+
+====>> INSTALL ANGULAR CLI <<====
+
+npm install -g @angular/cli
+
+====>> CRIA PASTA E OUTRAS INFORMAÇÕES <<====
+
+ng new Nome-Pasta
+
+====>> ACESSA PASTA <<====
+
+cd Pasta 
+
+====>> BUILD E ABRE O BROWSER COM O "-O" <<====
+
+ng serve -o 
+
+2 OPÇÕES PARA USAR => {
+
+	1. Importando eles no style master
+	====>> INSTALL BOOTSTRAP <<====
+
+	npm install bootstrap@next
+
+	@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+	====>> INSTALL FONT AWESOME <<====
+
+	npm install --save @fortawesome/fontawesome-free
+
+	@import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
+	
+	2. Ou colocando eles no Angular.json
+
+}
+
+====>>  <<===
+
+
+====>>  <<===
+
+
+====>>  <<===
+
+
+====>>  <<===

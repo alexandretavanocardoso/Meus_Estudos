@@ -2,6 +2,8 @@
 dotnet -h ==> Help
 dotnet --version ==> Versão do dotnet
 dotnet --list-sdks ==> Lista de versões instaladas no computador
+dotnet run - começa aplicação
+dotnet watch run - aplicação salva e não precisa reiniciar ela
 
 ==>> COMANDOS DO SDK <<==
 
