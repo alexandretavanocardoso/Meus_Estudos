@@ -1,0 +1,30 @@
+
+/* COMANDOS ANGULAR */
+
+===>> *NGFOR="LE ITEM OF COLLECTION" <<====
+
+- Faz um for nos itens chamados, EX.
+
+<div *ngFor="let itens of collection">
+    {{itens.EventoId}} - {{itens.Tema}} - {{itens.Local}}
+    <hr>
+</div>
+
+
+===>> *NGIF="" <<====
+
+<tbody *ngIf="eventos && eventos.length"><tbody>
+
+===>> <<====
+
+
+===>> <<====
+
+
+===>> <<====
+
+
+===>> <<====
+
+
+===>> <<====
