@@ -4,3 +4,5 @@ https://angular.io - Site Angular
 https://cli.angular.io - Passo a passo do install Angular
 
 https://valor-software.com/ngx-bootstrap/#/ - Booststrap Angular
+
+https://www.npmjs.com/package/ngx-toastr - Ngc Toastr - Alertas e Notificações
