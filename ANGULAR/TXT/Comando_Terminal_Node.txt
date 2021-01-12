@@ -34,8 +34,9 @@ ng serve -o
 
 }
 
-====>>  <<===
+====>> NGX TOASTR <<===
 
+npm install ngx-toastr --save
 
 ====>>  <<===
 
