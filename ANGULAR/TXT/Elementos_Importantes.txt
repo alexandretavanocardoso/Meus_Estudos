@@ -1,0 +1,73 @@
+
+
+====>>> ELEMTOS IMPORTANTES <<<====
+
+
+===>> BINDINGS <<===
+
+-- Dentro do compente html entra [] = [name]="el"
+
+==> Evento
+
+-- Dentro do compente html entra ()
+
+(click)="Método()"
+
+==> One Way Data Binding
+
+-- Do componente pro HTML
+
+[value]=""
+
+==> Two Way Data Binding
+
+-- Altera ambos ts - html
+
+[(ngModel)]=""
+
+===>> COMPONENTE <<===
+
+-- html
+-- css, sass, less
+-- ts
+
+===>> DIRETIVAS <<===
+
+@Directive({
+	selector: '[nome]'
+});
+
+=> Atributos
+- Alterar aparencia e comportamento de elemento, componente
+
+=> Estrutural "*"
+- Aletera a DOM, adicionando ou removendo
+
+===>> ROTAS <<===
+
+routerLink="endereco"
+routerLinkActive="classe"
+
+app-routing
+const route: Routes = [{
+	{path: 'endereco', component: Componente}
+}]
+
+app.html
+<router-outlet></router-outlet>
+
+===>> PIPES <<===
+
+-- Processamentos em intorpolações
+
+{{ evento.Nome | pipe }}
+{{ evento.Nome | pipe: 'parametros' }}
+
+EX. {{ evento.price | currency: 'BRL' }} - converte em moeda - brl - Real
+
+Ex. {{ evento.nome | uppercase }} = LETRA MAIUSCULA
+
+===>> OBSERVABLE <<===
+
+
+===>> SERVICES <<===

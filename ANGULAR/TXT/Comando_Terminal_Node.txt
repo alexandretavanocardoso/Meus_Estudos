@@ -34,13 +34,24 @@ ng serve -o
 
 }
 
-====>>  <<===
+====>> NPM INIT -Y <<===
 
+  Instala o package.json
 
-====>>  <<===
+====>> NPM I JSON-SERVE  <<===
 
+Instala dependencias no package.json
 
-====>>  <<===
+====>> NPM COMAND -Y <<===
 
+Responde todas perguntas com SIM
+
+====>> NG ADD @ANGULAR/MATERIAL <<===
+
+Componentes do material do Angular
+
+====>> NG GENERATE COMPONENT CAMINHO/NOMECOMPONENTE <<===
+
+Cria um componente
 
 ====>>  <<===
