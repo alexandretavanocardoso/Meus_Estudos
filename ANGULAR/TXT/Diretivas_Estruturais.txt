@@ -15,11 +15,13 @@
 
 <tbody *ngIf="eventos && eventos.length"><tbody>
 
-===>> <<====
+===>> [NGCLASS] <<====
 
+<input type="text" [ngClass]="{'is-invalid': registerForm.get('tema').errors && registerForm.get('tema').touched}" class="form-control" >
 
-===>> <<====
+===>> [DISABLE]="" <<====
 
+[disabled]="!registerForm.valid"
 
 ===>> <<====
 

@@ -34,9 +34,15 @@ ng serve -o
 
 }
 
+<<<<<<< HEAD
 ====>> NPM INIT -Y <<===
 
   Instala o package.json
+=======
+====>> NGX TOASTR <<===
+
+npm install ngx-toastr --save
+>>>>>>> 8e3b3ebe3d6836e50a4601704bb073377729cc35
 
 ====>> NPM I JSON-SERVE  <<===
 
