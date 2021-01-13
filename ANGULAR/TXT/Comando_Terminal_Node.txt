@@ -60,4 +60,22 @@ Componentes do material do Angular
 
 Cria um componente
 
-====>>  <<===
+====>> NPM I BOOTSTRAP <<===
+
+npm i bootstrap
+
+====>> NPM I JQUERY <<====
+
+npm i jquery
+
+====>> ANGULAR.JSON <<====
+
+"styles": [
+    "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+    "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+    "src/styles.css"
+],
+"scripts": [
+    "./node_modules/jquery/dist/jquery.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+]
