@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,KAAK;CAIf;;AALD,AAEI,UAFM,CAEN,EAAE,CAAC;EACC,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "encadeamento.scss"
+    ],
+    "names": [],
+    "file": "encadeamento.css"
+}

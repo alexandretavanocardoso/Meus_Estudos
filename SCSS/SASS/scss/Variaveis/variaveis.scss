@@ -1,0 +1,9 @@
+$preto: black;
+$vermelho: red;
+$center: center;
+$roxo: purple;
+// Usando as variaveis
+.variavel {
+    color: $vermelho;
+    background-color: $preto;
+}

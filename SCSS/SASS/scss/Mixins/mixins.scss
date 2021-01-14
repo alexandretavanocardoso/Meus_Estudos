@@ -1,0 +1,21 @@
+// usa para agrupamento
+// Usa para ser reusado
+
+
+@mixin Nome() {
+    // comandos css
+}
+// usando com o @Include
+.Class-Ids{
+    @include: Nome();
+}
+
+//Criando com o @mixin 
+@mixin box() {
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+// usando com o @Include
+.container{
+    @include: box();
+}

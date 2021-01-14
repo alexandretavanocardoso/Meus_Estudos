@@ -1,0 +1,20 @@
+/* FUNÇÂO JA EXISTENTE */
+
+// color: lighten(cor, numero);
+// color: darken(cor, numero);
+
+/* CRIANDO FUNCAO */
+
+@function nome(parametro){
+    @return
+}
+
+// Exemplo
+
+@function nome(parametro){
+    @if lighten(red) > 70 {
+        @return blue
+    } @else {
+        @return red
+    }
+}

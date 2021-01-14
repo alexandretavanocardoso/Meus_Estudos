@@ -1,0 +1,61 @@
+/*@FOR*/
+
+// Sintaxe
+@for $var from start to end {}
+
+// Looping com variavel - Ex 1 até 5
+// text-1, text-2, text-3, text-4, text-5
+@for $i from 1 through 5 {
+    .text-#{$i} {
+        font-size: 15px * 10px;
+    }
+}
+
+// Não pega o ultimo numero
+// text-1, text-2, text-3, text-4
+@for $i from 1 to 5 {
+    .text-#{$i} {
+        font-size: 15px * 10px;
+    }
+}
+
+
+/* Foreach */
+
+// Coleção de cores com chave
+$colors: (color: blue, color2:red);
+// Sintaxe
+@each $var in list {}
+
+// blue-text, red-text
+// após abrir as chaves, os estilos colcados recbem seus proprios valores
+@each $key,
+$colors in $colors {
+    .#{$colors}-text {
+        color: $colors
+    }
+}
+
+// Coleção de cores csem chave
+$colors:blue,
+red;
+// Sintaxe
+@each $var in list {}
+
+// blue-text, red-text
+// após abrir as chaves, os estilos colcados recbem seus proprios valores
+@each $colors in $colors {
+    .#{$colors}-text {
+        color: $colors
+    }
+}
+
+// Sem variavel
+// blue-text, red-text
+// após abrir as chaves, os estilos colcados recbem seus proprios valores
+@each $colors in blue,
+red {
+    .#{$colors}-text {
+        color: $colors
+    }
+}

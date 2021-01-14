@@ -1,0 +1,31 @@
+@if variavel === valor{
+    // comando
+} @else if{
+   // comando
+} @else {
+   // comando
+}
+
+// Exemplo com @mixin
+
+@mixin bold($var){
+    @if $var == bold {
+        font-weight: bold;
+    } @else if $var == 700{
+        font-weight: 700;
+    } @else {
+        font-weight: 100;
+    }
+}
+
+p{
+    @include: bold(bold);
+}
+
+h2{
+    @include: bold(none);
+}
+
+a{
+    @include: bold(700);
+}
