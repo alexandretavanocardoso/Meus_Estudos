@@ -17,7 +17,9 @@
 
 ===>> [NGCLASS] <<====
 
-<input type="text" [ngClass]="{'is-invalid': registerForm.get('tema').errors && registerForm.get('tema').touched}" class="form-control" >
+[ngClass]="{'classe"': condição == valor}"
+
+EX. [ngClass]="{'age-free': title.age === 0, 'age-12': title.age === 12, 'age-14': title.age === 14, 'age-16': title.age === 16, 'age-18': title.age === 18 }"
 
 ===>> [DISABLE]="" <<====
 
