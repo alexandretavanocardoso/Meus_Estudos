@@ -6,3 +6,9 @@ EXEMPLOS
 @Input() title: string = '';
 @Output() menuToggle: EventEmitter<boolean> = new EventEmitter();
 @ViewChild('trailer', { static: true }) trailer!: ElementRef<HTMLVideoElement>;
+
+
+========= nativeElement -  pega o elemento nativo
+
+Ex
+this.trailer.nativeElement.play();
