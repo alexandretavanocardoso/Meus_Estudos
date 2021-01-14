@@ -1,0 +1,16 @@
+
+===>> TODOS COMPONENTES QUE CRIAMOS TEMOS QUE IMPORTALOS NO APP.MODULE.TS <<====
+EX.
+
+import { EventosComponent } from './eventos/eventos.component';
+
+===>> PARA USARMOS NA PAGINA COLOCAMOS O SELETOR DA CLASSE DO COMPONENTE EM UM HTML <<====
+EX.
+
+<app-eventos></app-eventos>
+
+@Component({
+  selector: 'app-eventos', -- SELETOR
+  templateUrl: './eventos.component.html',
+  styleUrls: ['./eventos.component.scss']
+})

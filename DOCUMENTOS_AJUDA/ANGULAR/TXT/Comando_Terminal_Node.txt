@@ -1,0 +1,81 @@
+
+====>> INSTALL ANGULAR CLI <<====
+
+npm install -g @angular/cli
+
+====>> CRIA PASTA E OUTRAS INFORMAÇÕES <<====
+
+ng new Nome-Pasta
+
+====>> ACESSA PASTA <<====
+
+cd Pasta 
+
+====>> BUILD E ABRE O BROWSER COM O "-O" <<====
+
+ng serve -o 
+
+2 OPÇÕES PARA USAR => {
+
+	1. Importando eles no style master
+	====>> INSTALL BOOTSTRAP <<====
+
+	npm install bootstrap@next
+
+	@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+	====>> INSTALL FONT AWESOME <<====
+
+	npm install --save @fortawesome/fontawesome-free
+
+	@import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
+	
+	2. Ou colocando eles no Angular.json
+
+}
+
+====>> NPM INIT -Y <<===
+
+  Instala o package.json
+
+====>> NGX TOASTR <<===
+
+npm install ngx-toastr --save
+
+====>> NPM I JSON-SERVE  <<===
+
+Instala dependencias no package.json
+
+====>> NPM COMAND -Y <<===
+
+Responde todas perguntas com SIM
+
+====>> NG ADD @ANGULAR/MATERIAL <<===
+
+ng add @angular/material
+
+Componentes do material do Angular
+
+====>> NG GENERATE COMPONENT CAMINHO/NOMECOMPONENTE <<===
+
+Cria um componente
+
+====>> NPM I BOOTSTRAP <<===
+
+npm i bootstrap
+
+====>> NPM I JQUERY <<====
+
+npm i jquery
+
+====>> ANGULAR.JSON <<====
+
+"styles": [
+    "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+    "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+    "src/styles.css"
+],
+"scripts": [
+    "./node_modules/jquery/dist/jquery.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+]

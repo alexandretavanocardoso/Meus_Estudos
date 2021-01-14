@@ -1,0 +1,14 @@
+@Output()  - Recebe do FIlho - EventEmitter<tipo> = new EventEmitter();
+@Input() - Recebe do pai
+@ViewChild('id', {static: bool})  - pega o #id no elemento do html
+
+EXEMPLOS
+@Input() title: string = '';
+@Output() menuToggle: EventEmitter<boolean> = new EventEmitter();
+@ViewChild('trailer', { static: true }) trailer!: ElementRef<HTMLVideoElement>;
+
+
+========= nativeElement -  pega o elemento nativo
+
+Ex
+this.trailer.nativeElement.play();

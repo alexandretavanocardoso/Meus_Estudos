@@ -1,1 +1,0 @@
-https://www.telerik.com/kendo-angular-ui/components/grid/get-started/

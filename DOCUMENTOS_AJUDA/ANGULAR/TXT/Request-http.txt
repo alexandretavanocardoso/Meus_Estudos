@@ -1,0 +1,63 @@
+
+/* REQUEST HTTP */
+
+==> Configurar API para permitir mais de uma requisição  
+Ex.
+service.AddCors();
+app.UseCors(x => x.AllowAnyOrigin().AllowAnymethod().AllowAnyHeader());
+
+==> app.module.ts
+
+import { HttpClientModule } from "@angular/common/http"
+
+
+@NgModule({
+  declarations: [	
+    AppComponent,
+      EventosComponent
+   ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule <<====
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+
+==> clase.components.ts
+
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-eventos',
+  templateUrl: './eventos.component.html',
+  styleUrls: ['./eventos.component.scss']
+})
+export class EventosComponent implements OnInit {
+
+  eventos: any; -- Declara a variavel
+
+  constructor(private http: HttpClient) { } -- Injeção de dependencia
+
+	ngOnInit() { -- executado Antes do html ficar pronto
+    this.getEventos();
+	
+  }
+
+  getEventos() {
+  
+    this.http.get('urlApi').subscribe( response => {
+	
+        this.eventos = response
+		
+      }, error => {
+	  
+        console.log(error)
+		
+      });
+  }
+
+}
