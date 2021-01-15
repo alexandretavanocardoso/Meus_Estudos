@@ -1,4 +1,14 @@
 
+{
+	live sass compiler -- SASS
+
+	SCSS Formatter -- SASS
+
+	Usar ele após aplicar estilos
+	ctrl + shift + p 
+	live Sass: watch Sass
+}
+
 Debugger for Chrome - Debugar com chrome no vs
 
 npm - Rodar npm no terminal
