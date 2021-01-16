@@ -1,0 +1,15 @@
+
+
+/* INTRODUÇAO */
+
+https://www.npmjs.com
+
+NODE PACKAGE MANAGER
+
+Gerenciamento de pacotes/módulos para aplicações Node.js
+Gerenciamentos de pacotes de código JavaScript
+Instalação de ferramentas de linha de comando
+Bower - Gerenciador de pacotes front-end
+Grunt - test runner de js
+Yeoman - Criar aplicações
+Frameworks

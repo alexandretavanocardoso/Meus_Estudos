@@ -1,0 +1,9 @@
+
+
+/* INSTALAÇÂO E MANUTENCAO DE PACOTES */
+
+npm install nomePacote ==> Instala
+
+npm update nomePacote ==> Atualiza
+
+npm uninstall nomePacote ==> Desinstala

@@ -1,0 +1,30 @@
+
+/* COMANDOS ADICIONAIS */
+
+===> PACOTES <====
+
+npm install nomePacote ==> Instala
+
+npm update nomePacote ==> Atualiza
+
+npm uninstall nomePacote ==> Desinstala
+
+===> VERSÃO <====
+
+npm -v ==> Versão do npm
+
+===> CRIAR PROJETO E UM ARQUIVO PACKAGE.JSON <====
+
+npm init
+
+===> EXECUTAR PROJETO <====
+
+npm start
+
+===> INSTALAR PACOTES <====
+
+npm install nomePacote
+
+-- OBS: CASO PEGAR UM PROJETO SEM O NODE_MODULE, DAR UM 
+		npm install
+COM ISSO ELE INSTALA TODOS PACOTES QUE ESTÃO NO PACKAGE.JSON
