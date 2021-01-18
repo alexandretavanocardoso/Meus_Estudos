@@ -1,0 +1,41 @@
+
+
+===> CRIA UM COMPONENTE TITLE 
+
+===> NAS PAGES
+<app-titulo></app-titulo> // Titulo Padrao
+<app-titulo [Variavel]="VariavelDoTS"></app-titulo> // Caso for colocar titulo diferente em cada page
+
+=== TS DA PAGE
+
+export class NomeComponent implements OnInit {
+
+ Variavel = 'nome page';
+ 
+}
+
+== TS DO COMPONENTE TITULO
+
+export class TituloComponent implements OnInit {
+
+  title = 'Introdução ao Angular'; -- 1 TITULO EM TODAS PAGES
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+===> @INPUT()
+
+export class TituloComponent implements OnInit {
+
+  @Input() title: string = ''; -- DESSA FORMA ELE PODE RECEBER DADOS
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

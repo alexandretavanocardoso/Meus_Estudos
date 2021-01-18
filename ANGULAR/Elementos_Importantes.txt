@@ -5,21 +5,21 @@
 
 ===>> BINDINGS <<===
 
--- Dentro do compente html entra [] = [name]="el"
+-- Dentro do compente html entre [] = [name]="el"
 
-==> Evento
+===>> Evento <<<====
 
 -- Dentro do compente html entra ()
 
 (click)="Método()"
 
-==> One Way Data Binding
+===>> One Way Data Binding <<<====
 
 -- Do componente pro HTML
 
 [value]=""
 
-==> Two Way Data Binding
+===>> Two Way Data Binding <<<====
 
 -- Altera ambos ts - html
 
@@ -37,7 +37,7 @@
 	selector: '[nome]'
 });
 
-=> Atributos
+===>> Atributos <<<====
 - Alterar aparencia e comportamento de elemento, componente
 
 => Estrutural "*"
@@ -100,7 +100,7 @@ criarProduto(): void{
 	providedIn: "root",
  });
  
-===> Injeção de Depencias
+===>> Injeção de Depencias <<<====
  
  É um padrão no qual a classe revebe as DEPENDENCIAS de uma FONTE EXTERNA ao invés de
  criar por conta´própria

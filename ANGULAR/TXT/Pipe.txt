@@ -1,7 +1,0 @@
-
-===>> PIPE <<====
-
-https://angular.io/guide/pipes
-
-{{evento.Lote | uppercase}}
-{{evento.Lote | lowercase}}

@@ -1,0 +1,63 @@
+
+===>> app.Module.ts <<===
+
+imports: [ReactiveFormsModule]	
+
+
+===>> validation <<===
+
+registerForm: FormGroup; 
+
+constructor(
+    private fb: FormBuilder
+ ) { }
+
+
+ngOnInit() {
+    this.validation();
+}
+
+validation(){
+    this.registerForm = new FormGroup({
+      tema: new FormControl('', 
+        [Validators.required, Validators.minLength(4), Validators.maxLength(50)]),
+      local: new FormControl('', Validators.required),
+      dataEvento: new FormControl('', Validators.required),
+      qtdPessoas: new FormControl('', 
+        [Validators.required, Validators.maxLength(120000)]),
+      telefone: new FormControl('', Validators.required),
+      email: new FormControl('', 
+        [Validators.required, Validators.email]),
+      imagemURL: new FormControl('', Validators.required)
+    });
+}
+
+OU
+
+ validation(){
+    this.registerForm = this.fb.group({
+      tema: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(50)]],
+      local: ['', Validators.required],
+      dataEvento: ['', Validators.required],
+      qtdPessoas: ['', [Validators.required, Validators.maxLength(120000)]],
+      telefone: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      imagemURL: ['', Validators.required]
+    });
+  }
+
+
+===>> HTML <<===
+
+<form FormGroup="registerForm"></form>
+
+<input type="text" class="form-control" [ngClass]="{'is-invalid': registerForm.get('tema').errors && registerForm.get('tema').touched}" formControlName="tema">
+
+<div *ngIf="registerForm.get('tema').hasError('required') && registerForm.get('tema').touched" class="invalid-feedback">
+	Tema Obrigatório
+</div>
+
+-- Ver o que ta vindo
+
+<p>Form Value: {{registerForm.value | json}} </p>
+<p>Form Status: {{registerForm.status | json}} </p>
