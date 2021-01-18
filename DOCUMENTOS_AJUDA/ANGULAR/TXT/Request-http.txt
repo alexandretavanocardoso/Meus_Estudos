@@ -61,3 +61,12 @@ export class EventosComponent implements OnInit {
   }
 
 }
+
+/* Request http com autorização */
+ const header = new HttpHeaders().set('Authorization', 'chave');
+return this.http.get('https://api.api-futebol.com.br/v1/times/{time_id}', {headers: header}).subscribe(response  => {
+this.futebol = response;
+console.log(response)
+}, error => {
+console.log(error);
+});
