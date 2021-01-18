@@ -1,0 +1,7 @@
+===>> REFERENCIA <<<====
+
+#nome
+
+Ex. 
+<a #nome></a>
+<button (click)="nome.focus()">focus</button>

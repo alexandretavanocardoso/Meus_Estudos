@@ -1,0 +1,18 @@
+===>> BINDINGS <<===
+
+-- Dentro do compente html entre [] = [name]="el"
+-- Aplicada nos elementod do DOM
+
+===>> ONE WAY DATA BINDING <<<====
+
+-- Do componente pro HTML
+
+[value]=""
+[hidden]=""
+[class.light]=""
+
+===>> TWO WAY DATA BINDING <<<====
+
+-- Altera ambos TS e HTML
+
+[(ngModel)]=""

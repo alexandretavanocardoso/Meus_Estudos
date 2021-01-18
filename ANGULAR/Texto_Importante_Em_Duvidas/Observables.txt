@@ -1,0 +1,20 @@
+===>> OBSERVABLE <<===
+
+ Padrão orientado a Evento
+ 
+ Observer -> Subject -> Evento -> Subject Notifica os Observer, executandos suas funções
+
+ callbacks -> promisses	-> observable: reusavel, stream de dados, operadores
+
+ 
+Ex.
+
+criarNoBackEnd(produto: Produto): Observable<Produto>{
+	return this.http.post<Produto>(this.url, produto);
+}
+
+criarProduto(): void{
+	this.criarNoBackend(this.produto).subscribe(() => {
+		this.exibirMensagem("Salvo com Sucesso");
+	});
+}

@@ -1,0 +1,4 @@
+========= nativeElement -  pega o elemento nativo
+
+Ex
+this.trailer.nativeElement.play();

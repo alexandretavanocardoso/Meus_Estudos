@@ -1,0 +1,19 @@
+
+===>> PIPE <<====
+
+{{evento.Lote | pipe}}
+{{evento.Lote | pipe}}
+
+https://angular.io/guide/pipes
+
+{{evento.Lote | uppercase}}
+{{evento.Lote | currency: 'BRL'}}
+
+-- Processamentos em intorpolações
+
+{{ evento.Nome | pipe }}
+{{ evento.Nome | pipe: 'parametros' }}
+
+EX. {{ evento.price | currency: 'BRL' }} - converte em moeda - brl - Real
+
+Ex. {{ evento.nome | uppercase }} = LETRA MAIUSCULA

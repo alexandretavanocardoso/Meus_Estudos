@@ -1,0 +1,18 @@
+
+
+==> APP.COMPONENT>HTML
+
+<router-outlet></router-outlet>
+
+===> APP-ROUTING.MODULE.TS
+
+const routes: Routes = [
+  {path: 'Nomecaminho', component: Componente},
+];
+
+====> ROUTERLINK - QUANDO FOR A PAGINA
+====> ROUTERLINKACTIVE - QUANDO ESTIVER ATIVO
+
+routerLink="endereco"
+routerLinkActive="classe"
+

@@ -1,0 +1,6 @@
+===>> EVENTO <<<====
+
+-- Dentro do compente html entra ()
+
+(click)="Método()"
+

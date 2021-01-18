@@ -1,0 +1,71 @@
+===>> SERVICES <<===
+
+ ng g s services/product
+
+ São classes que tem princiupal objetivo ORGANIZAR e COMPARTILHAR métodos e dados
+ entre COMPONENTES
+ 
+ @injectable({
+	providedIn: "root",
+ });
+ 
+===>> Injeção de Depencias <<<====
+ 
+ É um padrão no qual a classe revebe as DEPENDENCIAS de uma FONTE EXTERNA ao invés de
+ criar por conta´própria
+ 
+EX.
+
+====>> SEM INJEÇÂO
+
+class Motor{}
+
+class Carro{
+	motor: Motor
+	
+	construtor() {
+		this.motor = new Motor()
+	}
+}
+
+====>> COM INJEÇÃO
+
+class Motor{
+	cilindrada: number
+	
+	construtor(cilindrada: number) {
+		this.cilindrada = cilindrada
+	}
+}
+
+class Carro{
+	motor: Motor
+	
+	construtor(motor: Motor) {
+		this.motor = Motor
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

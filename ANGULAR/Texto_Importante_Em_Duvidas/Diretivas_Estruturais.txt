@@ -10,7 +10,6 @@
     <hr>
 </div>
 
-
 ===>> *NGIF="" <<====
 
 <tbody *ngIf="eventos && eventos.length"><tbody>
