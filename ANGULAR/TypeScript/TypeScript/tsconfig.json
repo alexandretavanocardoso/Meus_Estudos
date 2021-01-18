@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "outDir": "dist", // Cria um diretorio pro .js
+        "noEmitOnError": false // Se tiver error não cria o formato para .js
+    }
+}
