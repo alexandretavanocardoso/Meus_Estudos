@@ -1,0 +1,80 @@
+DISPLAY: FLEX;
+
+===>>>>>> DIREÇÃO DA COLUNA <<<<<<===
+
+flex-direction: column, column-reverse , row , row-reverse;
+
+===>>>>>> QUEBRA DE LINHA <<<<<<===
+
+flex-wrap: nowrap , wrap , wrap-reverse;
+
+===>>>>>> JUNÇÃO DO FLEX-DIRECTION E FLEX-WRAP<<<<<<===
+
+// flex-flow: flex-direction flex-wrap
+
+flex-flow: column wrap;
+
+===>>>>>> ALINHA HORIZONTAMENTE <<<<<<===
+
+justify-content: flex-start , flex-end, center , space-between , space-around;
+
+
+ ALINHA VERTICALMENTE <<<<<<===
+
+align-items: stretch , center , flex-start , flex-end , baseline;
+
+===>>>>>> ALINHA VERTICALMENTE QUANDO ITEMS TIVEREM QUEBRA DE LINHA <<<<<<===
+
+align-content: center , flex-start , flex-end , space-between , space-around, stretch;
+
+=========>>>>>> PROPRIEDADES NOS ITEMS <<<<<<=========
+
+===>>>>>> ORDER <<<<<<===
+
+Todos item do bloco tem que ter o order caso for usalo. order 1, 2 , 3;
+
+Ordena os items do modo que desejamos no bloco
+
+order: 1;
+
+
+===>>>>>> ALIGN-SELF <<<<<<===
+
+Alinhamento do um unico item, o alinhamento do flex-direction altera entre horizontal e vertical
+
+align-self: auto, center , flex-start , flex-end , space-between , space-around, stretch;
+
+===>>>>>> FLEX-GROW <<<<<<===
+
+Modifica a largura dos items
+
+Usado tambem para items individualmente, pegando o flex-grow do elemento pai
+
+Pai - flex-grow: 1;
+Filhos - flex-grow: 3; // Ocupa um espaço de 3x vezes a mais que o pai
+
+===>>>>>> FLEX-BASIS <<<<<<===
+
+Define a largura inicial de cada item
+
+flex-basis: 20px;
+
+===>>>>>> FLEX-SHRINK <<<<<<===
+
+Modifica a largura dos items
+
+Usado tambem para items individualmente, pegando o flex-shrink do elemento pai
+
+Capacidade de reduzão do item
+
+Pai - flex-shrink: 1;
+Filhos - flex-shrink: 3; // Dominui um espaço de 3x vezes a mais que o pai
+
+===>>>>>> FLEX <<<<<<===
+
+Junção do flex-basis, flex-shrink e flex-grow
+
+flex: flex-grow flex-shrink flex-basis
+flex: 1 1 200px;
+
+
