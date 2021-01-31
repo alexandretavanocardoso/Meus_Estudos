@@ -1,0 +1,38 @@
+/* PEGA TODOS ITEMS */
+
+* {
+    color: red;
+}
+
+
+/* TAG */
+
+h1 {
+    color: blue;
+}
+
+
+/* INPUTS */
+
+Input[type="text"] {
+    width: 200px;
+}
+
+
+/* AGRUPANDO SELETORES */
+
+div h2 {
+    color: black;
+}
+
+div div span p {
+    color: brown;
+}
+
+
+/* Ou quando a formatação vai pegar mais de uma tag, classe */
+
+h2,
+h4 {
+    color: deepskyblue;
+}

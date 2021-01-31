@@ -1,0 +1,65 @@
+
+/* COR DO TEXTO */
+p {
+    color: red;
+    color: #fff;
+    color: rgb(0,0,0);
+    color: rgba(0,0,0, 0.2); /* Da opacidade an cor*/
+}
+
+/* ALINHAMENTO DOS TEXTOS */
+p{
+    text-align: center;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+}
+
+/* DECORAÇÃO AO TEXTO */
+p {
+    text-decoration: underline; -- Linhas abaixo do texto
+    text-decoration: overline; -- Linhas acima do texto
+    text-decoration:  line-through; -- Linha no centro do texto
+    text-decoration: none; -- Sem linha
+}
+
+/* DECORAÇÃO DE LETRAS */
+p {
+    text-transform: uppercase; -- Letra maiusculo
+    text-transform: lowercase; -- Letra minusculo
+    text-transform: capitalize; -- Primeira letra maiuscula
+}
+
+/* CRIA UM REGUO NA PRIMEIRA LINHA */
+p {
+    text-indent: 20px;
+}
+
+/* DEFINE A ALTURA DAS LINHAS */
+p {
+    line-height: 30px;
+}
+
+/* DIRECAO DO TEXTO */
+p {
+    direction: rtl; -- Direita para esquerda
+    direction: ltr; -- Esquerda para direita
+}
+
+/* ESPAÇAMENTO ENTRE LETRAS */
+p {
+    letter-spacing: 2px;
+    letter-spacing: -2px;
+}
+
+/* ESPAÇAMENTO ENTRE PALAVRAS */
+p {
+    word-spacing: 5px;
+    word-spacing: -5px;
+}
+
+/* SOMBRA AO TEXTO */
+p {
+    text-shadow: 3px 3px 4px red; -- Horizontal Vertical Desfoque Cor
+    text-shadow: -3px -3px 4px red; -- Horizontal Vertical Desfoque Cor
+}

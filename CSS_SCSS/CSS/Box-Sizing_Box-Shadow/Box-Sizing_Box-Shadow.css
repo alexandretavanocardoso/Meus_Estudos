@@ -1,0 +1,19 @@
+#um {
+    background-color: red;
+    width: 300px;
+}
+
+#dois {
+    background-color: red;
+    width: 300px;
+}
+
+/* FORÇA OS ELEMENTOS CONTINUAR COM A LARGURA QUE FOI DADA */
+* {
+    box-sizing: border-box;
+}
+
+/* SOMBRA NOS ELEMENTOS */
+#um {
+    box-shadow: 10px 10px 4px red; -- Horizontal Vertical Desfoque Cor
+}

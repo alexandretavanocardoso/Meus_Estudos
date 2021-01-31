@@ -1,0 +1,44 @@
+
+
+/* @FONTFACE - FONTE EXTERNA */
+/* Tem que converter a fonte abaixada para o formato web* .woff */
+@font-face {
+    font-family: Font Abaixada;
+    src: url(NomeArquivo.woff)
+}
+
+/* API GOOGLE - GOOGLE FONTS */
+/*
+    Ir no Google Fonts e ver qual estilo quer, e implementar o link ao arquivo html
+*/
+
+/* FONTE QUE VAI ADICIONAR */
+p{
+    font-family: Times, "Times New roman", sans-serif;
+}
+
+/* MODIFICA A FORMA DO TEXTO */
+p {
+    font-variant: normal;
+    font-variant: small-caps; /* Maiusculo */
+}
+
+/* NEGRITO */
+p {
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+    font-weight: bold;
+}
+
+/* FORMATA O TEXTO */
+p{
+    font-style: normal;
+    font-style: italic; /* Italico */
+    font-style: oblique; /* Oblique */
+}
+
+/* TAMANHO DA FONTE */
+p {
+    font-size: 20px;
+}
+
+/*  */
