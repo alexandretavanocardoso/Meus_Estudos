@@ -1,0 +1,62 @@
+/* ESTILO DA BORDA */
+
+p {
+    /* Pontilhado */
+    border-style: dotted;
+    /* Traço */
+    border-style: dashed;
+    /* Linha Sólida */
+    border-style: solid;
+    /* Duas linhas */
+    border-style: double;
+    /* Linha fraca */
+    border-style: groove;
+    /* Linha fraca */
+    border-style: ridge;
+    /* Pra dentro */
+    border-style: inset;
+    /* Pra fora */
+    border-style: outset;
+}
+
+
+/* LADO DAS BORDAS */
+
+p {
+    border-top: 10px;
+    border-bottom: 10px;
+    border-left: 10px;
+    border-right: 10px;
+}
+
+
+/* LARGURA DA BORDA */
+
+p {
+    border-width: 10px;
+}
+
+
+/* COR DA BORDA */
+
+p {
+    border-color: cornsilk;
+}
+
+
+/* JUNCAO  */
+
+p {
+    /*Largura Sólida Cor*/
+    border: 5px solid red;
+}
+
+
+/* OUTLINE 
+Mesmo estilo da borda 
+*/
+
+p {
+    outline: 5px solid red;
+    ;
+}
