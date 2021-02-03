@@ -34,17 +34,19 @@ body {
     background-position: left bottom;
 }
 
-/* ACOMPANHA BARRA DE ROLAGEM */
-body {
-    background-attachment: scroll;
-    background-attachment: fixed;
-}
-
 /* TAMANHO */
 /* Horizontal Vertical */
 body {
     background-size: 300px 500px;
     background-size: 100% 100%;
+    background-size: cover; 
+    background-size: contain;
+}
+
+/* ACOMPANHA BARRA DE ROLAGEM */
+body {
+    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 /* JUNCAO */

@@ -17,3 +17,22 @@
 #um {
     box-shadow: 10px 10px 4px red; -- Horizontal Vertical Desfoque Cor
 }
+
+/* SOMBRA EM BAIXO */
+#um {
+    box-shadow: 0 10px 5px -5px #000;
+}
+/* SOMBRA DE UM LADO TIPO PAPEL */
+#um:before {
+    z-index: -1;
+    content: '';
+    transform: rotate(-2deg);
+    box-shadow:0 15px 10px #999;
+}
+/* SOMBRA DOS DOIS LADOS  TIPO PAPEL  */
+#um:after {
+    z-index: -1;
+    content: '';
+    transform: rotate(2deg);
+    box-shadow:0 15px 10px #999;
+}

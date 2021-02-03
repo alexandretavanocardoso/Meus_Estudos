@@ -1,0 +1,61 @@
+/*
+    X - Eixo X
+    Y - Eixo Y
+    Z - Diagonal
+*/
+
+
+/* DECIDINDO A ORIGEM DA TRANSFORMAÇAO */
+
+div {
+    transform-origin: bottom;
+    transform-origin: center;
+    transform-origin: left;
+    transform-origin: right;
+}
+
+
+/*  AUMENTA O TAMANHO */
+
+div {
+    transform: scale(1.5);
+    transform: scaleY(1.5);
+    transform: scaleX(1.5);
+    transform: scaleZ(1.5);
+}
+
+
+/* RODA OS ELEMENTOS */
+
+div {
+    transform: rotate(45deg);
+    transform: rotateX(45deg);
+    transform: rotateY(45deg);
+    transform: rotateZ(45deg);
+}
+
+
+/* ELEMENTO SE MEXE */
+
+div {
+    transform: translate(10px, -10px);
+    transform: translateY(-10px);
+    transform: translateX(10px);
+    transform: translateZ(10px);
+}
+
+
+/* DISTORCE O ELEMENTO */
+
+div {
+    transform: skew(45deg);
+    transform: skewX(14deg);
+    transform: skewY(14deg);
+}
+
+
+/* JUNTANDO */
+
+div {
+    transform: translateY(10px), scale(1.5);
+}

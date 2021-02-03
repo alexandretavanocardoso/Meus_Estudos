@@ -1,0 +1,21 @@
+
+
+/* DIVIDIR COM CONTAGEM DAS COLUNAS */
+div p{
+    column-count: 2;
+}
+
+/* SEPARAÇÃO DAS COLUNAS */
+div p{
+    column-gap: 40px;
+}
+
+/* LINHA SEPARATORA */
+div p {
+    column-rule: 1px solid #000;
+}
+
+/* DIVIDIR COM LARGURA DA COLUNA */
+div p {
+    column-width: 250px;
+}

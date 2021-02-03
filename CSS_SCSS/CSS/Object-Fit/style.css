@@ -1,0 +1,39 @@
+
+/*
+    REDIMENSIONA IMAGEM, VIDEO, etc
+    Imagem tem que estar no html
+*/
+
+/* NENHUM */
+img {
+    object-fit: none;
+}
+
+/* PREENCHE O CONTAINER, IMAGEM AUMENTA E NÂO DISTORCE  ** MELHOR ** */
+img {
+    object-fit: cover;
+}
+
+/*  PREENCHER O CONTAINER, POREM DISTORCE */
+img {
+    object-fit: fill;
+}
+
+/* ATINGE O LIMITE DO CONTAINER */
+img {
+    object-fit: contain;
+}
+
+/* REDUZ A IMAGEM */
+img {
+    object-fit: scale-down;
+}
+
+/* POSICAO */
+img {
+    object-position: top;
+    object-position: left;
+    object-position: right;
+    object-position: bottom;
+    object-position: bottom left;
+}
