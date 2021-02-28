@@ -3,55 +3,58 @@
     https://www.w3schools.com/jsref/jsref_obj_math.asp
 */
 
-/*** 
-    Math.ceil()
-    Arredonda o valor pra maior
- ***/
-
-var x = 15.2;
-var y = 75;
-
-document.write(Math.ceil(x));
 
 /*** 
-    Math.floor()
-    Arredonda o valor pra baixo
-    Considera parte inteira
- ***/
-
-var x = 15.2;
-var y = 75;
-
-document.write(Math.floor(x));
+    toString()
+    Converte para string
+***/
+let num = 1;
+console.log(num.toString());
+console.log(num.toString(2)); // Vemos o binário
 
 /*** 
-    Math.round()
-    Olha o "peso" do numero para arrendondar
-    EX. maior que .499 aredonda pra cima 
-    EX. menor que .499 aredonda pra baixo
- ***/
+    toFixed()
+    Casas decimais 
+***/
+let num1 = 10.5550;
+console.log(num1.toFixed(2));
 
-var x = 15.575;
-var y = 75;
-
-document.write(Math.round(x));
+//#region [ Number ]
+/*** 
+    Number.isInteger(variavel)
+    Vemos se o numero é inteiro ou não
+    Retorna true or false
+***/
+let num2 = 10;
+console.log(Number.isInteger(num2));
 
 /*** 
-    Math.random()
-    Gera numero aleatorio
-    Valor entra 0 e 1
- ***/
-
-var x = Math.random();
-Math.abs
-
-document.write(x);
+    Number.isNaN(variavel)
+    Vemos se a conta é "NANN"
+    Retorna true or false
+***/
+let num3 = 10 * "olá";
+console.log(Number.isNaN(num3));
 
 /*** 
-    Math.abs()
-    Converte o numero negatico para positivo
- ***/
+    Number(variavel)
+***/
+let num6 = 2.1;
+console.log(Number(num6));
+//#endregion [ Number ]
 
-var x = -400;
+//#region [ Parse ]
+/*** 
+    parseInt(variavel)
+    Converte apra Inteiro
+***/
+let num4 = 1.6;
+console.log(parseInt(num4));
 
-document.write(Math.abs(x));
+/*** 
+    parseFloat(variavel)
+    Converte pra float
+***/
+let num5 = 1.6;
+console.log(parseFloat(num5));
+//#endregion [ Parse ]
