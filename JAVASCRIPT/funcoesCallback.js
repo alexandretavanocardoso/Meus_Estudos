@@ -1,3 +1,4 @@
+// São executadas quando uma Ação finaliza, ocorre
 // Funcoes encaminhadas por parametros
 // Da continuidade no processamento da logica
 

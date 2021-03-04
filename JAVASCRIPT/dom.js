@@ -1,6 +1,14 @@
 /************
     DOM
 ************/
+// Cria um Elemento
+document.createElement("div");
+
+// Adiciona um elemento
+document.append();
+
+// Adiciona um filho no pai
+document.appendChild();
 
 // #region [ Pegando Ids, Name, Classe, Tag ]
 // Pega o ID
@@ -14,6 +22,9 @@ document.getElementsByTagName("");
 
 // Pega o NAME
 document.getElementsByName("");
+
+// Pode fazer um caminho
+document.querySelector("");
 // #endregion [ Pegando Ids, Name, Classe, Tag ]
 
 // #region [ Manipulando Valores ]
@@ -42,6 +53,10 @@ a.style.fontSize = "18px";
 var a = document.getElementsById("teste");
 
 a.className = "Classe";
+
+a.classList.add();
+a.classList.remove();
+a.classList.toggle();
 // #endregion [ Manipulando Classes ]
 
 
